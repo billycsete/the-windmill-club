@@ -1,4 +1,4 @@
-the-windmill-club
+The Windmill Club
 =================
 
-The Windmill Club - Crispy Menswear
+Crispy Menswear
