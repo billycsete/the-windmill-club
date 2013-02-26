@@ -243,14 +243,14 @@ text-shadow:#fff 1px 1px 0;
 #details #details-btn { width:240px; }
 #details #details-btn li { width:118px; float:left; }
 #details #details-btn li:last-child { float:right; }
-#details #details-btn li a { background:#666; }
-#details #details-btn li a .arrow { border-top:12px solid #666; }
+#details #details-btn li a { background:#222; }
+#details #details-btn li a .arrow { border-top:12px solid #222; }
 .desktop #details #details-btn li a:hover { background:#bf4a22; }
 .desktop #details #details-btn li a:hover .arrow { border-top:12px solid #bf4a22; }
-#details #details-btn li a.active { background:#222; }
-#details #details-btn li a.active .arrow { bottom:-12px; border-top:12px solid #222; }
-.desktop #details #details-btn li a.active:hover { background:#222; cursor:default; }
-.desktop #details #details-btn li a.active:hover .arrow { border-top:12px solid #222; }
+#details #details-btn li a.active { background:#666; }
+#details #details-btn li a.active .arrow { bottom:-12px; border-top:12px solid #666; }
+.desktop #details #details-btn li a.active:hover { background:#666; cursor:default; }
+.desktop #details #details-btn li a.active:hover .arrow { border-top:12px solid #666; }
 
 /* details gird */
 #details .four-col { padding:60px 10px 20px 10px; text-align:center; }
