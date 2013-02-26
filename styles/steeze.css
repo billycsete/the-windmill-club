@@ -197,6 +197,9 @@ html[xmlns] .slides { display:block; }
 	transition:background-color .2s;
 }
 #threads .buy .buy-btn:hover { background:#bf4a22; }
+#threads .buy .buy-btn.sold-out { width:210px; cursor:default; }
+#threads .buy .buy-btn.sold-out:hover { background:#222; }
+
 #threads .buy .size { float:left; }
 
 /* size dropdown  */
