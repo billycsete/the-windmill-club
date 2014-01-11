@@ -203,12 +203,12 @@ html[xmlns] .slides { display:block; }
 #threads .buy .size { float:left; }
 
 /* size dropdown  */
-#threads .buy .dk_container { background-color:#eee; font-size:16px; line-height:20px; text-align:left; }
-#threads .buy .dk_container:focus { outline:0; }
-#threads .buy .dk_container a { cursor:pointer; text-decoration:none; }
+.dk_container { background-color:#eee; font-size:16px; line-height:20px; text-align:left; }
+.dk_container:focus { outline:0; }
+.dk_container a { cursor:pointer; text-decoration:none; }
 
 /* opens the dropdown and holds the menu label */
-#threads .buy .dk_toggle {
+.dk_toggle {
 width:54px;
 background:url('../images/small_arrow.png') no-repeat 80% center;;
 border:1px solid #ccc;
@@ -216,22 +216,42 @@ color:#444;
 padding:7px 10px 7px 10px;
 text-shadow:#fff 1px 1px 0;
 }
-#threads .buy .dk_toggle:hover,
-#threads .buy .dk_focus .dk_toggle { border-color: #ccc; }
+.dk_toggle:hover,
+.dk_focus .dk_toggle { border-color: #ccc; }
 
 /* applied whenever the dropdown is open */
-#threads .buy .dk_open { z-index:10; }
-#threads .buy .dk_open .dk_toggle { background-color:#eee; color:#ccc; }
-#threads .buy .dk_open .dk_toggle:hover { border-color:#ccc; }
+.dk_open { z-index:10; }
+.dk_open .dk_toggle { background-color:#eee; color:#ccc; }
+.dk_open .dk_toggle:hover { border-color:#ccc; }
 
 /* the outer container of the options */
-#threads .buy .dk_options a { background-color:#fff; border-bottom:1px solid #ccc; padding:4px 10px; }
-#threads .buy .dk_options li { width:100%; }
-#threads .buy .dk_options li:last-child a { border-bottom:none; }
-#threads .buy .dk_options a:hover { background-color:#fff; color:#bf4a22; }
+.dk_options a { background-color:#fff; border-bottom:1px solid #ccc; padding:4px 10px; }
+.dk_options li { width:100%; }
+.dk_options li:last-child a { border-bottom:none; }
+.dk_options a:hover { background-color:#fff; color:#bf4a22; }
 
 /* inner container for options */
-#threads .buy .dk_options_inner { border:1px solid #cccccc; color:#444; }
+.dk_options_inner { border:1px solid #cccccc; color:#444; }
+
+/* email signup */
+#signup { background:#bf4a22; color:#fff; padding:40px; text-align:center; font-family:'brandon-grotesque', sans-serif; }
+#signup #preorder { width:400px; margin:0 auto; text-align:left; }
+#signup h2 { color:#fff; font-size:20px; margin-bottom:30px; font-family:'brandon-grotesque', sans-serif; font-weight:300; text-transform:uppercase; letter-spacing:1px; }
+#signup p { text-shadow:none; display:block; text-align:left; }
+#signup label { float:left; }
+/*#signup .dk_container { display:block; width:80px; }*/
+
+
+/* pre order button */
+#signup .preorder-btn {
+	width:150px; margin:0; padding:8px 0px; background:#222; border:none; border-radius:0;
+	font-family:'brandon-grotesque', sans-serif; font-size:16px; font-weight:300; line-height:20px; text-transform:uppercase; letter-spacing:2px; color:#efefef; font-weight:300; font-style:normal;
+	cursor:pointer;
+	-webkit-transition:all .2s;
+	-moz-transition:all .2s;
+	transition:all .2s;
+}
+#signup .preorder-btn:hover { background:#efefef; color:#444; }
 
 
 

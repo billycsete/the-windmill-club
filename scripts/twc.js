@@ -68,7 +68,7 @@ $(document).ready( function() {
 	});
 
 	// dropkick the size dropdowns for custom styling
-	$('.size').dropkick();
+	$('.dropdown').dropkick();
 
 	// get latest tweet
 	$.getJSON("https://api.twitter.com/1/statuses/user_timeline/thewindmillclub.json?count=1&include_rts=1&callback=?", function(data) {
@@ -95,6 +95,50 @@ $(document).ready( function() {
 		query: 'thewindmillclub',
 		max: 1,
 		wrapEachWith: '<figure></figure>'
+	});
+
+	// contact form
+	$("#submit").click(function () {
+		$(".error").hide();
+		$("form label").removeClass(hasError);
+		var hasError = false;
+		var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+		
+		//Validate name field
+		var nameVal = $("#name").val();
+		if (nameVal == '') {
+			$("#label_name").addClass("hasError").append('<br/><span class="error">Forgot your name?</span>');
+			hasError = true;
+		}
+		
+		//Valide email field
+		var emailVal = $("#email").val();
+		if (emailVal == '') {
+			$("#label_email").addClass("hasError").append('<br/><span class="error">Please enter an email address.</span>');
+			hasError = true;
+		} else if (!emailReg.test(emailVal)) {
+			$("#label_email").addClass("hasError").append('<br/><span class="error">Your email address was not valid.</span>');
+			hasError = true;
+		}
+		
+		//Valide message field
+		var messageVal = $("#message").val();
+		if (messageVal == '') {
+			$("#label_message").addClass("hasError").append('<br/><span class="error">Please enter a message</span>');
+			hasError = true;
+		}
+		
+		//Test message
+		if (hasError == false) {
+			$("label").addClass("hasText");
+			$("#submit").addClass("sending");
+			$.post("send_email.php",
+			   { name: nameVal, email: emailVal, message: messageVal },
+			   	function(data) {
+					$("form").html('<div id="confirmation">Message sent, Thank you!</div>');
+				}
+			);
+		}
 	});
 });
 

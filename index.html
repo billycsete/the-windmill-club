@@ -142,7 +142,7 @@
 							</tbody>
 						</table>
 					</div>
-				</div>
+				</div><!--/chart-->
 
 				<ul id="threads" class="clearself">
 					<li class="column" id="blue">
@@ -159,7 +159,7 @@
 								<table>
 								<tr><td><input type="hidden" name="on1" value="Size"></td></tr><tr><td>
 								<button class="buy-btn" name="submit" alt="Purchase blue oxford">PURCHASE</button>
-								<select class="size" name="os1">
+								<select class="size dropdown" name="os1">
 									<option value="XS">XS </option>
 									<option value="S">S </option>
 									<option value="M">M </option>
@@ -184,10 +184,44 @@
 								<button class="buy-btn sold-out" alt="Sold out of white shirts, sorry!">SOLD OUT</button>
 							</div>
 							<p>Free shipping on Domestic orders</p>
-						</div>			
+						</div>
 					</li>
-				</ul>
+				</ul><!--/threads-->
 			</div>
+
+			<div id="signup">
+				<h2>Swag not in stock? No worries, we've got your back.</h2>
+				<form id="preorder" action="send_email.php">
+					<fieldset>
+						<p class="name clearself">
+							<label id="label_name">Name: </label>
+							<input type="text" id="name" maxlength="30">
+						</p>
+						<p class="email clearself">
+							<label id="label_email">Email:</label>
+							<input type="email" id="email">
+						</p>
+						<p class="color clearself">
+							<label id="label_color">Color: </label>
+							<select id="color" class="dropdown">
+								<option value="white">White </option>
+								<option value="blue">Blue </option>
+							</select>
+						</p>
+						<p class="size clearself">
+							<label id="label_size">Size: </label>
+							<select id="size" class="dropdown">
+								<option value="XS">XS </option>
+								<option value="S">S </option>
+								<option value="M">M </option>
+								<option value="L">L </option>
+								<option value="XL">XL </option>
+							</select>
+						</p>
+						<button type="button" id="submit" class="preorder-btn">pre order</button>
+					</fieldset>
+				</form>
+			</div><!--/signup-->
 		</section>
 
 		<section id="details" class="section">
