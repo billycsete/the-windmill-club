@@ -132,10 +132,10 @@ html[xmlns] .slides { display:block; }
 * html .slides { height:1%; }
 
 /* control nav */
-#looks .flex-control-nav { position:absolute; padding:20px 0; bottom:-50px; width:100%; text-align:center; }
+#looks .flex-control-nav { position:absolute; padding:20px 0; bottom:-60px; width:100%; text-align:center; }
 #looks .flex-control-nav li { margin:0 3px; display:inline-block; zoom:1; *display:inline; }
 #looks .flex-control-paging li a {
-	width:10px; height:10px; display:block; background:#ccc; cursor:pointer; text-indent:-9999px;
+	width:8px; height:8px; display:block; background:#ccc; cursor:pointer; text-indent:-9999px;
 	-webkit-transition:-webkit-transform .2s;
 	-moz-transition:-webkit-transform .2s;
 	transition:-webkit-transform .2s;
@@ -359,6 +359,9 @@ text-shadow:#fff 1px 1px 0;
 	/* flexslider control nav */
 	#looks .flex-control-nav { bottom:-60px; }
 	#looks .flex-control-nav li { margin:0 6px; }
+	#looks .flex-control-paging li a {
+		width:10px; height:10px;
+	}
 
 	/* flexslider direction nav */
 	.desktop #looks .flex-direction-nav { display:block; position:absolute; z-index:15; top:50%; margin-top:-35px; width:100%; overflow:hidden; }
