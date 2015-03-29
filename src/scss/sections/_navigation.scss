@@ -1,0 +1,39 @@
+// =================================================
+//
+// Section - Navigation
+//
+// =================================================
+
+.nav {
+	position: sticky;
+	z-index: 9000;
+	background: $white;
+	top: 0;
+
+	.nav-list {
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+		text-align: center;
+	}
+
+	.nav-item {
+		display: inline-block;
+	}
+
+	.nav-link {
+		display: inline-block;
+		font-family: $sans-serif;
+		text-decoration: none;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		color: $black;
+		.no-touch &:hover { color: $red; }
+
+		padding: rem(20px);
+		width: 60px;
+		@include media($small) { width: 96px; }
+		@include media($medium) { width: 140px; }
+		@include media($large) { width: 220px; }
+	}
+}

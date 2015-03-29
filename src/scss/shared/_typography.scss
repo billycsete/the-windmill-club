@@ -4,12 +4,8 @@
 //
 // =================================================
 
-// =================================================
-// Weights
-// =================================================
-
-$normal: 400;
-$bold: 600;
+$sans-serif : 'brandon-grotesque', sans-serif;
+$serif : 'freight-text-pro', 'georgia', serif;
 
 
 // =================================================
@@ -18,7 +14,8 @@ $bold: 600;
 
 html, body {
 	font-size: 12px;
-	font-family: 'courier new', 'courier', 'monospace';
+	font-family: $serif;
+	font-weight: 300;
 	color: $black;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
@@ -34,4 +31,14 @@ html, body {
 	@include media($large) {
 		font-size: 18px;
 	}
+}
+
+
+// =================================================
+// Headings
+// =================================================
+
+h1, h2, h3, h4 {
+	font-family: $sans-serif;
+	font-weight: 400;
 }

@@ -24,19 +24,20 @@ html *, body * {
 // Colors
 // =================================================
 
-$white:      #fff;
-$white-grey: #f5f5f5;
-$dark-grey:  #888;
-$black:      #444;
+$white     : #fff;
+$grey      : #eee;
+$dark-grey : #888;
+$black     : #2a2a2a;
+$red       : #bf4a22;
 
 
 // =================================================
 // Breakpoints
 // =================================================
 
-$small: new-breakpoint(min-width 480px 4);
-$medium: new-breakpoint(min-width 760px 6);
-$large: new-breakpoint(min-width 1200px 12);
+$small  : new-breakpoint(min-width 560px 4);
+$medium : new-breakpoint(min-width 760px 6);
+$large  : new-breakpoint(min-width 1200px 12);
 
 
 // =================================================

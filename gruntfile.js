@@ -98,7 +98,7 @@ module.exports = function( grunt ) {
           {
             expand: true,
             cwd: 'src/',
-            src: ['fonts/*', '*.html'],
+            src: ['fonts/*', '*.html', 'images/*'],
             dest: 'dist/'
           }
         ]
@@ -109,7 +109,7 @@ module.exports = function( grunt ) {
     watch: {
       js : {
         files: ['<%= jshint.files %>'],
-        tasks: ['jshint', 'concat', 'browserify', 'uglify']
+        tasks: ['js']
       },
       css: {
         files: ['src/scss/**/*.scss', 'src/scss/*.scss'],
@@ -135,7 +135,7 @@ module.exports = function( grunt ) {
 
   // Tasks
   grunt.registerTask('css', ['sass', 'autoprefixer']);
-  grunt.registerTask('js', ['jshint', 'browserify', 'concat', 'uglify']);
+  grunt.registerTask('js', ['browserify', 'concat', 'uglify']);
   grunt.registerTask('default', ['clean:dist', 'css', 'js', 'copy']);
 
 };

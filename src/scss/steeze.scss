@@ -17,21 +17,22 @@
 // =================================================
 
 @import 'shared/normalize';
-@import 'shared/icons';
 @import 'shared/site';
 @import 'shared/typography';
+@import 'shared/icons';
+@import 'shared/images';
+@import 'shared/owl-carousel';
 
 
 // =================================================
 // Sections
 // =================================================
 
-@import 'old-steeze';
+// @import 'old-steeze';
 
-// @import 'home/sections/header';
-// @import 'home/sections/lookbook';
-// @import 'home/sections/shop';
-// @import 'home/sections/shop-size-chart';
-// @import 'home/sections/shop-polo';
-// @import 'home/sections/shop-club';
-// @import 'home/sections/footer';
+@import 'sections/section';
+@import 'sections/header';
+@import 'sections/navigation';
+@import 'sections/section-looks';
+// @import 'sections/section-shop';
+// @import 'sections/footer';

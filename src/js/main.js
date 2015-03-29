@@ -1,18 +1,20 @@
 /*jslint node: true */
 'use strict';
 
-var $   = require('../../bower_components/jquery/dist/jquery');
-var owl = require('../../bower_components/owl-carousel2/dist/owl.carousel.js');
-
-
-var Main = {
-
-	initialize : function() {
-
-
-
+$('.owl-carousel').owlCarousel({
+	loop:true,
+	margin:10,
+	responsiveClass:true,
+	responsive:{
+		0:{
+			items:1,
+			nav:true
+		},
+		600:{
+			items:2
+		},
+		1000:{
+			items:3
+		}
 	}
-
-};
-
-Main.initialize();
+});
