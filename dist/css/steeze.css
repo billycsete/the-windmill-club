@@ -390,7 +390,8 @@ html, body {
 
 h1, h2, h3, h4 {
   font-family: "brandon-grotesque", sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  margin-top: 0; }
 
 figure {
   margin: 0;
@@ -509,13 +510,15 @@ figure {
   100% {
     opacity: 0; } }
 .section {
-  padding: 5rem 0;
+  padding: 6.25rem 0;
   background-color: #eee;
   background-image: -webkit-linear-gradient(#eee, #fff);
   background-image: linear-gradient(#eee, #fff); }
+  .section .section-header {
+    margin-bottom: 3.75rem; }
 
 .header {
-  height: 90vh;
+  height: 84vh;
   width: 100%;
   text-align: center;
   color: #2a2a2a;
