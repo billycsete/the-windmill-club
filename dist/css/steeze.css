@@ -393,9 +393,15 @@ h1, h2, h3, h4 {
   font-weight: 400; }
 
 figure {
-  display: block;
   margin: 0;
   padding: 0; }
+  figure.fluid {
+    display: block;
+    margin: 0;
+    padding: 0; }
+    figure.fluid img {
+      display: block;
+      max-width: 100%; }
 
 /*
  *  Core Owl Carousel CSS File
