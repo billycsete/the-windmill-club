@@ -1,0 +1,22 @@
+// =================================================
+//
+// Section - Header
+//
+// =================================================
+
+.header {
+	height: 90vh;
+	width: 100%;
+	text-align: center;
+	color: $black;
+
+	background-image: url(../images/header_background.jpg);
+	background-size: cover;
+	background-position: 50% 60%;
+	background-attachment: fixed;
+
+
+	.logo {
+		padding-top: 50px;
+	}
+}
