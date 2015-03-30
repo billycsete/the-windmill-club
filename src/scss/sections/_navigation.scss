@@ -19,6 +19,7 @@
 
 	.nav-item {
 		display: inline-block;
+
 	}
 
 	.nav-link {
@@ -30,10 +31,34 @@
 		color: $black;
 		.no-touch &:hover { color: $red; }
 
-		padding: rem(20px);
-		width: 60px;
-		@include media($small) { width: 96px; }
-		@include media($medium) { width: 140px; }
-		@include media($large) { width: 220px; }
+		font-size: rem(12px);
+		width: auto;
+		padding: rem(20px) rem(10px);
+
+		@include media($small) {
+			width: 96px;
+			font-size: inherit
+		}
+		@include media($medium) {
+			width: 140px;
+		}
+		@include media($large) {
+			width: 220px;
+		}
+	}
+
+	.nav-item-arrow {
+		.touch & {
+			display: none;
+			@include media($small) {
+				display: inline-block;
+			}
+		}
+		.nav-link {
+			width: 40px;
+			@include media($small) {
+				width: 60px;
+			}
+		}
 	}
 }

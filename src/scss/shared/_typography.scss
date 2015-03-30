@@ -13,7 +13,7 @@ $serif : 'freight-text-pro', 'georgia', serif;
 // =================================================
 
 html, body {
-	font-size: 12px;
+	font-size: 16px;
 	font-family: $serif;
 	font-weight: 300;
 	color: $black;
@@ -21,15 +21,15 @@ html, body {
 	-webkit-font-smoothing: antialiased;
 
 	@include media($small) {
-		font-size: 14px;
+		font-size: 17px;
 	}
 
 	@include media($medium) {
-		font-size: 16px;
+		font-size: 18px;
 	}
 
 	@include media($large) {
-		font-size: 18px;
+		font-size: 19px;
 	}
 }
 

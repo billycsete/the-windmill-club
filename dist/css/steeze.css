@@ -9,7 +9,6 @@ html {
 *, *::after, *::before {
   box-sizing: inherit; }
 
-/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -372,7 +371,7 @@ html *, body * {
   box-sizing: border-box; }
 
 html, body {
-  font-size: 12px;
+  font-size: 16px;
   font-family: "freight-text-pro", "georgia", serif;
   font-weight: 300;
   color: #2a2a2a;
@@ -380,13 +379,13 @@ html, body {
   -webkit-font-smoothing: antialiased; }
   @media screen and (min-width: 560px) {
     html, body {
-      font-size: 14px; } }
+      font-size: 17px; } }
   @media screen and (min-width: 760px) {
     html, body {
-      font-size: 16px; } }
+      font-size: 18px; } }
   @media screen and (min-width: 1200px) {
     html, body {
-      font-size: 18px; } }
+      font-size: 19px; } }
 
 h1, h2, h3, h4 {
   font-family: "brandon-grotesque", sans-serif;
@@ -404,9 +403,6 @@ figure {
       display: block;
       max-width: 100%; }
 
-/*
- *  Core Owl Carousel CSS File
- */
 .owl-carousel {
   display: none;
   width: 100%;
@@ -483,9 +479,6 @@ figure {
 .no-js .owl-carousel {
   display: block; }
 
-/*
- *  Owl Carousel - Animate Plugin
- */
 .owl-carousel .animated {
   -webkit-animation-duration: 1000ms;
   animation-duration: 1000ms;
@@ -509,11 +502,56 @@ figure {
     opacity: 1; }
   100% {
     opacity: 0; } }
+.owl-controls {
+  position: relative; }
+
+.owl-dots {
+  position: relative;
+  z-index: 1;
+  padding-top: 1.25rem; }
+  @media screen and (min-width: 560px) {
+    .owl-dots {
+      padding-top: 2.5rem; } }
+  .owl-dots .owl-dot {
+    display: inline-block;
+    width: 0.25rem;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    background: #ccc;
+    -webkit-transition: background 0.2s ease-in-out;
+            transition: background 0.2s ease-in-out; }
+    .no-touch .owl-dots .owl-dot:hover {
+      background: #aaa; }
+    .owl-dots .owl-dot.active, .no-touch .owl-dots .owl-dot.active:hover {
+      background: #777; }
+    .owl-dots .owl-dot:last-child {
+      margin-right: 0; }
+    @media screen and (min-width: 760px) {
+      .owl-dots .owl-dot {
+        width: 0.625rem;
+        height: 0.625rem;
+        margin-right: 0.75rem;
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), background 0.2s ease-in-out;
+                transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86), background 0.2s ease-in-out; }
+        .owl-dots .owl-dot.active, .no-touch .owl-dots .owl-dot.active:hover {
+          -webkit-transform: rotate(45deg);
+              -ms-transform: rotate(45deg);
+                  transform: rotate(45deg); } }
+
+.touch .owl-nav {
+  display: none; }
+
 .section {
-  padding: 6.25rem 0;
   background-color: #eee;
   background-image: -webkit-linear-gradient(#eee, #fff);
-  background-image: linear-gradient(#eee, #fff); }
+  background-image: linear-gradient(#eee, #fff);
+  padding: 3.75rem 0; }
+  @media screen and (min-width: 760px) {
+    .section {
+      padding: 6.25rem 0; } }
   .section .section-header {
     margin-bottom: 3.75rem; }
 
@@ -549,19 +587,31 @@ figure {
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #2a2a2a;
-    padding: 1.25rem;
-    width: 60px; }
+    font-size: 0.75rem;
+    width: auto;
+    padding: 1.25rem 0.625rem; }
     .no-touch .nav .nav-link:hover {
       color: #bf4a22; }
     @media screen and (min-width: 560px) {
       .nav .nav-link {
-        width: 96px; } }
+        width: 96px;
+        font-size: inherit; } }
     @media screen and (min-width: 760px) {
       .nav .nav-link {
         width: 140px; } }
     @media screen and (min-width: 1200px) {
       .nav .nav-link {
         width: 220px; } }
+  .touch .nav .nav-item-arrow {
+    display: none; }
+    @media screen and (min-width: 560px) {
+      .touch .nav .nav-item-arrow {
+        display: inline-block; } }
+  .nav .nav-item-arrow .nav-link {
+    width: 40px; }
+    @media screen and (min-width: 560px) {
+      .nav .nav-item-arrow .nav-link {
+        width: 60px; } }
 
 .looks-section {
   text-align: center; }

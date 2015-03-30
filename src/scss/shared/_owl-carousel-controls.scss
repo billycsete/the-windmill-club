@@ -1,0 +1,62 @@
+// =================================================
+//
+// Owl Carousel - Controls
+//
+// =================================================
+
+.owl-controls {
+	position: relative;
+}
+
+
+// Dot nav
+.owl-dots {
+	position: relative;
+	z-index: 1;
+	padding-top: rem(20px);
+	@include media($small) {
+		padding-top: rem(40px);
+	}
+
+	.owl-dot {
+		display: inline-block;
+		width: rem(4px);
+		height: rem(20px);
+		margin-right: rem(8px);
+		background: #ccc;
+		transition: background 0.2s ease-in-out;
+
+		.no-touch &:hover {
+			background: #aaa;
+		}
+
+		&.active,
+		.no-touch &.active:hover {
+			background: #777;
+		}
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		@include media($medium) {
+			width: rem(10px);
+			height: rem(10px);
+			margin-right: rem(12px);
+			transform: rotate(0deg);
+			transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860), background 0.2s ease-in-out;
+
+			&.active,
+			.no-touch &.active:hover {
+				transform: rotate(45deg);
+			}
+		}
+	}
+}
+
+// Paddle Nav
+.owl-nav {
+	.touch & {
+		display: none;
+	}
+}

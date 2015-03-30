@@ -5,8 +5,12 @@
 // =================================================
 
 .section {
-	padding: rem(100px) 0;
 	@include linear-gradient($grey, $white);
+	padding: rem(60px) 0;
+
+	@include media($medium) {
+		padding: rem(100px) 0;
+	}
 
 	.section-header {
 		margin-bottom: rem(60px);
