@@ -546,8 +546,8 @@ figure {
 
 .section {
   background-color: #eee;
-  background-image: -webkit-linear-gradient(#eee, #fff);
-  background-image: linear-gradient(#eee, #fff);
+  background-image: -webkit-linear-gradient(#eee, #f5f5f5);
+  background-image: linear-gradient(#eee, #f5f5f5);
   padding: 3.75rem 0;
   text-align: center; }
   @media screen and (min-width: 760px) {
@@ -633,3 +633,30 @@ figure {
 
 .looks-section {
   text-align: center; }
+
+.shop-section .chart {
+  background: #fff;
+  font-size: 12px;
+  text-align: left; }
+.shop-section .chart-wrapper {
+  padding: 20px 0 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .shop-section .chart-wrapper table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    border-bottom: 1 px solid #ddd; }
+    .shop-section .chart-wrapper table th {
+      padding: 10px 4px; }
+    .shop-section .chart-wrapper table td {
+      padding: 10px 4px;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd; }
+      .shop-section .chart-wrapper table td.first {
+        text-align: left;
+        font-weight: bold;
+        border-left: none;
+        padding-left: 8px; }
+    .shop-section .chart-wrapper table sup {
+      font-size: .8em; }
