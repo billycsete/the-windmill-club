@@ -37,9 +37,19 @@ function initializeLooksGallery() {
 // Set up size charts
 function initializeSizeCharts() {
 	var $chartButtons = $('.chart-button');
+	var $charts = $('.chart');
+
+	// close the size charts by default
+	$charts.each( function( index, elem ) {
+		$(elem).hide();
+	});
 
 	$chartButtons.on('click', function() {
-		console.log(this, 'clicked chart button!');
+		var chartName = $(this).attr('data-chart');
+		// slide open size chart
+		$('#' + chartName).slideToggle(200);
+		// add an active class on button to style on
+		$(this).toggleClass('active');
 	});
 }
 
