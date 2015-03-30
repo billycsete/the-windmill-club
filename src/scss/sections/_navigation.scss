@@ -10,6 +10,10 @@
 	background: $white;
 	top: 0;
 
+	.touch & {
+		position: relative;
+	}
+
 	.nav-list {
 		margin: 0;
 		padding: 0;
