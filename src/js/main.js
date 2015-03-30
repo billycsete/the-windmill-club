@@ -1,15 +1,21 @@
 /*jslint node: true */
 'use strict';
 
+// dropkick the size dropdowns for custom steeze
+// $('.size').dropkick();
+// add scrollTo animation for nav links
 $('.nav-link').on('click', scrollTo);
-
+// create lookbook gallery
 initializeLooksGallery();
+// fire up google analytics
 initializeAnalytics();
+// create toggle animation for size charts
 initializeSizeCharts();
 
 
+
 // Set up looks carousel gallery
-function initializeLooksGallery() {
+function initializeLooksGallery( ) {
 	$('.owl-carousel').owlCarousel({
 		loop: true,
 		margin: 10,
@@ -34,7 +40,7 @@ function initializeLooksGallery() {
 
 
 // Set up size charts
-function initializeSizeCharts() {
+function initializeSizeCharts( ) {
 	var $chartButtons = $('.chart-button');
 	var $charts = $('.chart');
 
@@ -76,3 +82,34 @@ function initializeAnalytics( ) {
 
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 }
+
+
+// function postLatestTweet( ) {
+// 	$.getJSON("https://api.twitter.com/1/statuses/user_timeline/thewindmillclub.json?count=1&include_rts=1&callback=?", function(data) {
+// 		// result returned
+// 		var tweet = data[0].text;
+// 		// process links and reply
+// 		tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
+// 			return '<a href="'+url+'">'+url+'</a>';
+// 		}).replace(/B@([_a-z0-9]+)/ig, function(reply) {
+// 			return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+// 		});
+// 		// output the result
+// 		$("#tweet").html('&ldquo; ' + tweet + ' &rdquo;');
+// 	});
+// }
+
+
+
+
+// load latest instagram
+// jQuery.fn.spectragram.accessData = {
+// 	accessToken: '17800924.fdaeaee.d0866f89ef444956ad099a86e264fe35',
+// 	clientID: 'eb777df6aea147bab66da6a456eb0276'
+// };
+
+// $('#instagram').spectragram('getUserFeed',{
+// 	query: 'thewindmillclub',
+// 	max: 1,
+// 	wrapEachWith: '<figure></figure>'
+// });
