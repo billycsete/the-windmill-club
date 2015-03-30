@@ -392,16 +392,28 @@ h1, h2, h3, h4 {
   font-weight: 400;
   margin-top: 0; }
 
+button {
+  display: inline-block;
+  background: none;
+  box-shadow: none;
+  padding: 0.625rem 1.25rem 0.5rem;
+  border: 2px solid #888;
+  color: #888;
+  letter-spacing: 2px;
+  font-family: "brandon-grotesque", sans-serif;
+  text-transform: uppercase; }
+
 figure {
   margin: 0;
   padding: 0; }
-  figure.fluid {
+
+.fluid-image {
+  display: block;
+  margin: 0;
+  padding: 0; }
+  .fluid-image img {
     display: block;
-    margin: 0;
-    padding: 0; }
-    figure.fluid img {
-      display: block;
-      max-width: 100%; }
+    max-width: 100%; }
 
 .owl-carousel {
   display: none;
@@ -514,7 +526,7 @@ figure {
       padding-top: 2.5rem; } }
   .owl-dots .owl-dot {
     display: inline-block;
-    width: 0.25rem;
+    width: 4px;
     height: 1.25rem;
     margin-right: 0.5rem;
     background: #ccc;
@@ -526,10 +538,10 @@ figure {
       background: #777; }
     .owl-dots .owl-dot:last-child {
       margin-right: 0; }
-    @media screen and (min-width: 760px) {
+    @media screen and (min-width: 560px) {
       .owl-dots .owl-dot {
-        width: 0.625rem;
-        height: 0.625rem;
+        width: 12px;
+        height: 12px;
         margin-right: 0.75rem;
         -webkit-transform: rotate(0deg);
             -ms-transform: rotate(0deg);
@@ -660,3 +672,9 @@ figure {
         padding-left: 8px; }
     .shop-section .chart-wrapper table sup {
       font-size: .8em; }
+.shop-section .hanger-column .fluid-image {
+  max-width: 110%; }
+.shop-section .hanger-column-left .fluid-image {
+  margin-left: -10%; }
+.shop-section .hanger-column-right .fluid-image {
+  margin-right: -10%; }

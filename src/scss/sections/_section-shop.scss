@@ -6,6 +6,7 @@
 
 .shop-section {
 
+	// Size Chart
 	.chart {
 		background: #fff;
 		font-size: 12px;
@@ -45,4 +46,27 @@
 		}
 	}
 
+	// Hanger
+	.hanger {
+
+	}
+
+	.hanger-column {
+
+		.fluid-image {
+			max-width: 110%;
+		}
+	}
+
+	.hanger-column-left {
+		.fluid-image {
+			margin-left: -10%;
+		}
+	}
+
+	.hanger-column-right {
+		.fluid-image {
+			margin-right: -10%;
+		}
+	}
 }

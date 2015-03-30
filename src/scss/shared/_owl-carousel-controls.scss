@@ -20,7 +20,7 @@
 
 	.owl-dot {
 		display: inline-block;
-		width: rem(4px);
+		width: 4px;
 		height: rem(20px);
 		margin-right: rem(8px);
 		background: #ccc;
@@ -39,9 +39,9 @@
 			margin-right: 0;
 		}
 
-		@include media($medium) {
-			width: rem(10px);
-			height: rem(10px);
+		@include media($small) {
+			width: 12px;
+			height: 12px;
 			margin-right: rem(12px);
 			transform: rotate(0deg);
 			transition: transform 0.5s cubic-bezier(0.785, 0.135, 0.150, 0.860), background 0.2s ease-in-out;

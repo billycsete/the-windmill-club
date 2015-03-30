@@ -2,9 +2,11 @@
 /*jslint node: true */
 'use strict';
 
-initializeLooksGallery();
 $('.nav-link').on('click', scrollTo);
+
+initializeLooksGallery();
 initializeAnalytics();
+initializeSizeCharts();
 
 
 // Set up looks carousel gallery
@@ -28,6 +30,16 @@ function initializeLooksGallery() {
 				items: 4
 			}
 		}
+	});
+}
+
+
+// Set up size charts
+function initializeSizeCharts() {
+	var $chartButtons = $('.chart-button');
+
+	$chartButtons.on('click', function() {
+		console.log(this, 'clicked chart button!');
 	});
 }
 
