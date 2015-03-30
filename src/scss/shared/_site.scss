@@ -7,8 +7,6 @@
 // is a background on the html element, the body background
 // behaves just like any other element.
 //
-// 2. Border box all the things cuz its awesome
-//
 // =================================================
 
 html {
@@ -16,9 +14,7 @@ html {
 	height: 100%;
 }
 
-html *, body * {
-	box-sizing: border-box; // 2
-}
+$border-box-sizing: true !default;
 
 // =================================================
 // Colors
@@ -39,12 +35,3 @@ $red       : #bf4a22;
 $small  : new-breakpoint(min-width 560px 4);
 $medium : new-breakpoint(min-width 760px 6);
 $large  : new-breakpoint(min-width 1200px 12);
-
-
-// =================================================
-// Bourbon Grid Settings
-// =================================================
-
-$column: 90px;
-$gutter: 30px;
-$grid-columns: 12;

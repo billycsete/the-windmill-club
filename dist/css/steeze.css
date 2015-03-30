@@ -367,9 +367,6 @@ html {
   background: none;
   height: 100%; }
 
-html *, body * {
-  box-sizing: border-box; }
-
 html, body {
   font-size: 16px;
   font-family: "freight-text-pro", "georgia", serif;
@@ -674,6 +671,10 @@ figure {
       font-size: .8em; }
 .shop-section .hanger-column .fluid-image {
   max-width: 110%; }
+@media screen and (min-width: 760px) {
+  .shop-section .hanger-column {
+    width: 50%;
+    float: left; } }
 .shop-section .hanger-column-left .fluid-image {
   margin-left: -10%; }
 .shop-section .hanger-column-right .fluid-image {

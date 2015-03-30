@@ -56,6 +56,12 @@
 		.fluid-image {
 			max-width: 110%;
 		}
+
+
+		@include media($medium) {
+			width: 50%;
+			float: left;
+		}
 	}
 
 	.hanger-column-left {
