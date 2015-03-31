@@ -5,3 +5,43 @@
 // From: http://fontello.com
 //
 // =================================================
+
+@font-face {
+  font-family: 'icons';
+  src: url('../fonts/icons.eot?49767708');
+  src: url('../fonts/icons.eot?49767708#iefix') format('embedded-opentype'),
+       url('../fonts/icons.woff?49767708') format('woff'),
+       url('../fonts/icons.ttf?49767708') format('truetype'),
+       url('../fonts/icons.svg?49767708#icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  font-family: "icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+}
+
+.icon-right-open-big:before { content: '\e800'; } /* '' */
+.icon-left-open-big:before { content: '\e801'; } /* '' */
+.icon-twitter:before { content: '\e802'; } /* '' */
+.icon-instagram:before { content: '\e803'; } /* '' */
