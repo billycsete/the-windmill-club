@@ -766,7 +766,8 @@ figure {
     width: 100%;
     max-width: 1000px;
     margin: 0px auto;
-    border-bottom: 1 px solid #ddd; }
+    border-bottom: 1 px solid #ddd;
+    font-family: "brandon-grotesque", sans-serif; }
     .chart-wrapper table th {
       padding: 10px 4px; }
     .chart-wrapper table td {
