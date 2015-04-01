@@ -7,7 +7,7 @@
 .header {
 	position: relative;
 	z-index: 1;
-	height: 84vh;
+	height: 98vh;
 	width: 100%;
 	text-align: center;
 	color: $black;
@@ -24,16 +24,47 @@
 		position: absolute;
 		z-index: 2;
 		width: 100%;
-		top: 30%;
+		top: 50%;
 		left: 50%;
 		transform: translate3d(-50%, -50%, 0);
+
+		margin-top: -80px;
 	}
 
 	.header-logo {
-		margin: 0 auto;
-		width: 80px;
+		margin: 0 auto rem(20px);
+		width: rem(90px);
 		@include media($medium) {
-			width: 104px;
+			width: rem(120px);
 		}
 	}
+
+	h1 {
+		font-size: 30px;
+		margin-bottom: rem(50px);
+
+		@include media($medium) {
+			font-size: 34px;
+		}
+	}
+
+	h2 {
+		font-size: 20px;
+		margin-bottom: 0;
+		line-height: 1.2;
+
+		@include media($medium) {
+			font-size: 22px;
+		}
+	}
+
+	p {
+		font-size: 20px;
+		margin-top: 0;
+
+		@include media($medium) {
+			font-size: 22px;
+		}
+	}
+
 }

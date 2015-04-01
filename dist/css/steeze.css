@@ -650,7 +650,7 @@ figure {
 .header {
   position: relative;
   z-index: 1;
-  height: 84vh;
+  height: 98vh;
   width: 100%;
   text-align: center;
   color: #2a2a2a;
@@ -663,16 +663,36 @@ figure {
     position: absolute;
     z-index: 2;
     width: 100%;
-    top: 30%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
-            transform: translate3d(-50%, -50%, 0); }
+            transform: translate3d(-50%, -50%, 0);
+    margin-top: -80px; }
   .header .header-logo {
-    margin: 0 auto;
-    width: 80px; }
+    margin: 0 auto 1.25rem;
+    width: 5.625rem; }
     @media screen and (min-width: 760px) {
       .header .header-logo {
-        width: 104px; } }
+        width: 7.5rem; } }
+  .header h1 {
+    font-size: 30px;
+    margin-bottom: 3.125rem; }
+    @media screen and (min-width: 760px) {
+      .header h1 {
+        font-size: 34px; } }
+  .header h2 {
+    font-size: 20px;
+    margin-bottom: 0;
+    line-height: 1.2; }
+    @media screen and (min-width: 760px) {
+      .header h2 {
+        font-size: 22px; } }
+  .header p {
+    font-size: 20px;
+    margin-top: 0; }
+    @media screen and (min-width: 760px) {
+      .header p {
+        font-size: 22px; } }
 
 .nav {
   position: -webkit-sticky;
@@ -732,8 +752,9 @@ figure {
 
 .shop-section .hanger {
   max-width: 1618px;
+  padding-top: 1.875rem;
   margin: 0 auto;
-  padding-top: 1.875rem; }
+  overflow: hidden; }
   .shop-section .hanger::after {
     clear: both;
     content: "";

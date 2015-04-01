@@ -10,8 +10,9 @@
 	.hanger {
 		@include clearfix;
 		max-width: 1618px;
-		margin: 0 auto;
 		padding-top: rem(30px);
+		margin: 0 auto;
+		overflow: hidden;
 	}
 
 	.hanger-column {
