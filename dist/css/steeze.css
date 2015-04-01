@@ -717,6 +717,8 @@ figure {
         font-size: 22px; } }
 
 .nav {
+  position: -webkit-sticky;
+  position: sticky;
   z-index: 9000;
   background: #fff;
   top: 0;
