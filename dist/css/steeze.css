@@ -724,6 +724,11 @@ figure {
 
 .looks-section {
   text-align: center; }
+  .looks-section .fluid-image {
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); }
 
 .shop-section .hanger {
   max-width: 1618px;

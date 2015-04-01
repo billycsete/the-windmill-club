@@ -6,4 +6,9 @@
 
 .looks-section {
 	text-align: center;
+
+	.fluid-image {
+		backface-visibility: hidden;
+		transform: translate3d(0,0,0);
+	}
 }

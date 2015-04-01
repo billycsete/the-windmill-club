@@ -32,7 +32,7 @@ function initializeLooksGallery( ) {
 			780: {
 				items: 3
 			},
-			1200: {
+			1400: {
 				items: 4
 			}
 		}
