@@ -8,9 +8,10 @@ button {
 	display: inline-block;
 	background: none;
 	box-shadow: none;
+	outline: none;
 	padding: rem(10px) rem(20px) rem(8px);
-	border: 2px solid $dark-grey;
-	color: $dark-grey;
+	border: 1px solid $black;
+	color: $black;
 	letter-spacing: 2px;
 	font-family: $sans-serif;
 	text-transform: uppercase;
