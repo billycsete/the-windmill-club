@@ -5,10 +5,15 @@
 // =================================================
 
 // Size Chart
+.chart-button {
+	margin-bottom: rem(30px);
+}
+
 .chart {
 	background: #fff;
-	font-size: 12px;
+	font-size: rem(12px);
 	text-align: left;
+	margin-bottom: rem(30px);
 }
 
 .chart-wrapper {
