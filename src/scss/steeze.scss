@@ -13,17 +13,23 @@
 
 
 // =================================================
-// Shared
+// Settings
 // =================================================
 
-@import 'shared/normalize';
-@import 'shared/site';
-@import 'shared/typography';
-@import 'shared/icons';
-@import 'shared/button';
-@import 'shared/images';
-@import 'shared/carousel';
-@import 'shared/carousel-controls';
+@import 'settings/normalize';
+@import 'settings/site';
+@import 'settings/typography';
+
+
+// =================================================
+// Partials
+// =================================================
+
+@import 'partials/icons';
+@import 'partials/button';
+@import 'partials/images';
+@import 'partials/carousel';
+@import 'partials/carousel-controls';
 
 
 // =================================================
