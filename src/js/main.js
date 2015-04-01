@@ -3,10 +3,10 @@
 
 // dropkick the size dropdowns for custom steeze
 // $('.size').dropkick();
-// add scrollTo animation for nav links
-$('.nav-link').on('click', scrollTo);
-// add polyfill for sticky nav
-$('.nav').fixedsticky();
+// set up parallax on header background image
+initializeHeaderParallax();
+// set up sticky nav with scrollTo links
+initializeNav();
 // create lookbook gallery
 initializeLooksGallery();
 // fire up google analytics
@@ -14,6 +14,33 @@ initializeAnalytics();
 // create toggle animation for size charts
 initializeSizeCharts();
 
+
+// Set up header parallax
+function initializeHeaderParallax( ) {
+	var $headerElement = $('#header');
+	var currentBackgroundPosition = parseFloat($headerElement.css('backgroundPositionY'));
+
+	$(window).scroll( function() {
+		var headerHeight = $headerElement.height();
+		var pxScrolled = $(window).scrollTop();
+
+		var newPosition = currentBackgroundPosition + (pxScrolled / 10);
+
+		console.log(newPosition);
+		$headerElement.css('backgroundPositionY', newPosition + '%');
+	});
+}
+
+
+function initializeNav( ) {
+	// add scrollTo animation for nav links
+	$('.nav-link').on('click', scrollTo);
+	// add polyfill for sticky nav
+	if ( $('html').hasClass('no-touch') ) {
+		FixedSticky.tests.sticky = false;
+		$('.nav').fixedsticky();
+	}
+}
 
 
 // Set up looks carousel gallery

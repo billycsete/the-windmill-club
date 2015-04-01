@@ -5,15 +5,10 @@
 // =================================================
 
 .nav {
-	position: sticky;
 	z-index: 9000;
 	background: $white;
 	top: 0;
 	width: 100%;
-
-	.touch & {
-		position: relative;
-	}
 
 	.nav-list {
 		margin: 0;
