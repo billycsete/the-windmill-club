@@ -390,6 +390,9 @@ h1, h2, h3, h4 {
   font-weight: 400;
   margin-top: 0; }
 
+h1, h2 {
+  text-transform: uppercase; }
+
 @font-face {
   font-family: 'icons';
   src: url("../fonts/icons.eot?49767708");
@@ -604,8 +607,42 @@ figure {
   @media screen and (min-width: 760px) {
     .section {
       padding: 6.25rem 0; } }
-  .section .section-header {
-    margin-bottom: 3.75rem; }
+  .section.no-pad {
+    padding: 0; }
+    @media screen and (min-width: 560px) {
+      .section.no-pad {
+        padding: 0; } }
+    @media screen and (min-width: 760px) {
+      .section.no-pad {
+        padding: 0; } }
+    @media screen and (min-width: 1200px) {
+      .section.no-pad {
+        padding: 0; } }
+  .section.no-pad-bottom {
+    padding-bottom: 0; }
+    @media screen and (min-width: 560px) {
+      .section.no-pad-bottom {
+        padding-bottom: 0; } }
+    @media screen and (min-width: 760px) {
+      .section.no-pad-bottom {
+        padding-bottom: 0; } }
+    @media screen and (min-width: 1200px) {
+      .section.no-pad-bottom {
+        padding-bottom: 0; } }
+  .section.no-pad-top {
+    padding-top: 0; }
+    @media screen and (min-width: 560px) {
+      .section.no-pad-top {
+        padding-top: 0; } }
+    @media screen and (min-width: 760px) {
+      .section.no-pad-top {
+        padding-top: 0; } }
+    @media screen and (min-width: 1200px) {
+      .section.no-pad-top {
+        padding-top: 0; } }
+
+.section-header {
+  margin-bottom: 3.75rem; }
 
 .header {
   position: relative;
@@ -685,32 +722,13 @@ figure {
 .looks-section {
   text-align: center; }
 
-.shop-section .chart {
-  background: #fff;
-  font-size: 12px;
-  text-align: left; }
-.shop-section .chart-wrapper {
-  padding: 20px 0 30px;
-  border-top: 1px solid #ccc;
-  border-bottom: 1px solid #ccc; }
-  .shop-section .chart-wrapper table {
-    width: 100%;
-    max-width: 1000px;
-    margin: 0px auto;
-    border-bottom: 1 px solid #ddd; }
-    .shop-section .chart-wrapper table th {
-      padding: 10px 4px; }
-    .shop-section .chart-wrapper table td {
-      padding: 10px 4px;
-      border-top: 1px solid #ddd;
-      border-left: 1px solid #ddd; }
-      .shop-section .chart-wrapper table td.first {
-        text-align: left;
-        font-weight: bold;
-        border-left: none;
-        padding-left: 8px; }
-    .shop-section .chart-wrapper table sup {
-      font-size: .8em; }
+.shop-section .hanger {
+  max-width: 1618px;
+  margin: 0 auto; }
+  .shop-section .hanger::after {
+    clear: both;
+    content: "";
+    display: table; }
 .shop-section .hanger-column .fluid-image {
   max-width: 110%; }
 @media screen and (min-width: 760px) {
@@ -721,3 +739,31 @@ figure {
   margin-left: -10%; }
 .shop-section .hanger-column-right .fluid-image {
   margin-right: -10%; }
+
+.chart {
+  background: #fff;
+  font-size: 12px;
+  text-align: left; }
+
+.chart-wrapper {
+  padding: 20px 0 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc; }
+  .chart-wrapper table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    border-bottom: 1 px solid #ddd; }
+    .chart-wrapper table th {
+      padding: 10px 4px; }
+    .chart-wrapper table td {
+      padding: 10px 4px;
+      border-top: 1px solid #ddd;
+      border-left: 1px solid #ddd; }
+      .chart-wrapper table td.first {
+        text-align: left;
+        font-weight: bold;
+        border-left: none;
+        padding-left: 8px; }
+    .chart-wrapper table sup {
+      font-size: .8em; }

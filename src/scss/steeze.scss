@@ -28,19 +28,23 @@
 @import 'partials/icons';
 @import 'partials/button';
 @import 'partials/images';
+
 @import 'partials/carousel';
 @import 'partials/carousel-controls';
 
+@import 'partials/section';
+@import 'partials/section-header';
+
 
 // =================================================
-// Sections
+// Section Specific Styles
 // =================================================
 
 // @import 'old-steeze';
 
-@import 'sections/section';
 @import 'sections/header';
 @import 'sections/navigation';
 @import 'sections/section-looks';
 @import 'sections/section-shop';
-// @import 'sections/footer';
+@import 'sections/section-shop-chart';
+@import 'sections/footer';

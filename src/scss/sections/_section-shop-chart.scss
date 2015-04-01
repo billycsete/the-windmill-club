@@ -1,0 +1,45 @@
+// =================================================
+//
+// Section - Shop Chart
+//
+// =================================================
+
+// Size Chart
+.chart {
+	background: #fff;
+	font-size: 12px;
+	text-align: left;
+}
+
+.chart-wrapper {
+	padding: 20px 0 30px;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+
+	table {
+	width: 100%;
+	max-width: 1000px;
+	margin: 0px auto;
+	border-bottom: 1 px solid #ddd;
+
+		th {
+			padding: 10px 4px;
+		}
+		td {
+			padding: 10px 4px;
+			border-top: 1px solid #ddd;
+			border-left: 1px solid #ddd;
+
+			&.first {
+				text-align: left;
+				font-weight: bold;
+				border-left: none;
+				padding-left: 8px;
+			}
+		}
+
+		sup {
+			font-size:.8em;
+		}
+	}
+}

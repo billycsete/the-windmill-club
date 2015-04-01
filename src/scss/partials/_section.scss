@@ -1,0 +1,36 @@
+// =================================================
+//
+// Section
+//
+// =================================================
+
+.section {
+	@include linear-gradient($grey, $off-white);
+	padding: rem(60px) 0;
+	text-align: center;
+
+	@include media($medium) {
+		padding: rem(100px) 0;
+	}
+
+	&.no-pad {
+		padding: 0;
+		@include media($small) { padding: 0; }
+		@include media($medium) { padding: 0; }
+		@include media($large) { padding: 0; }
+	}
+
+	&.no-pad-bottom {
+		padding-bottom: 0;
+		@include media($small) { padding-bottom: 0; }
+		@include media($medium) { padding-bottom: 0; }
+		@include media($large) { padding-bottom: 0; }
+	}
+
+	&.no-pad-top {
+		padding-top: 0;
+		@include media($small) { padding-top: 0; }
+		@include media($medium) { padding-top: 0; }
+		@include media($large) { padding-top: 0; }
+	}
+}
