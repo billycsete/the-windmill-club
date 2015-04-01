@@ -462,6 +462,28 @@ figure {
     display: block;
     max-width: 100%; }
 
+.fixedsticky {
+  position: -webkit-sticky;
+  position: -moz-sticky;
+  position: -ms-sticky;
+  position: -o-sticky;
+  position: sticky; }
+
+/* When position: sticky is supported but native behavior is ignored */
+.fixedsticky-withoutfixedfixed .fixedsticky-off,
+.fixed-supported .fixedsticky-off {
+  position: static; }
+
+.fixedsticky-withoutfixedfixed .fixedsticky-on,
+.fixed-supported .fixedsticky-on {
+  position: fixed; }
+
+.fixedsticky-dummy {
+  display: none; }
+
+.fixedsticky-on + .fixedsticky-dummy {
+  display: block; }
+
 .owl-carousel {
   display: none;
   width: 100%;
@@ -695,11 +717,10 @@ figure {
         font-size: 22px; } }
 
 .nav {
-  position: -webkit-sticky;
-  position: sticky;
   z-index: 9000;
   background: #fff;
-  top: 0; }
+  top: 0;
+  width: 100%; }
   .touch .nav {
     position: relative; }
   .nav .nav-list {
@@ -802,3 +823,9 @@ figure {
         padding-left: 8px; }
     .chart-wrapper table sup {
       font-size: .8em; }
+
+.footer {
+  background: #2a2a2a;
+  padding: 2.5rem 0;
+  color: #fff;
+  text-align: center; }

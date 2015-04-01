@@ -6,6 +6,8 @@
 // $('.size').dropkick();
 // add scrollTo animation for nav links
 $('.nav-link').on('click', scrollTo);
+// add polyfill for sticky nav
+$('.nav').fixedsticky();
 // create lookbook gallery
 initializeLooksGallery();
 // fire up google analytics
