@@ -58,3 +58,20 @@ p {
 	color: $dark-grey;
 	line-height: 1.4;
 }
+
+
+// =================================================
+// Links
+// =================================================
+
+a {
+	text-decoration: none;
+}
+
+a.link {
+	color: $dark-grey;
+
+	.no-touch &:hover {
+		color: $red;
+	}
+}
