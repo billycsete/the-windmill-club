@@ -6,7 +6,20 @@
 
 .footer {
 	background: $black;
-	padding: rem(40px) 0;
-	color: $white;
+	padding: rem(30px) 0;
+	font-family: $sans-serif;
 	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: rem(12px);
+
+	p {
+		color: $white;
+	}
+
+	a.link { color: $white; }
+
+	.credz {
+		font-size: rem(10px);
+	}
 }
