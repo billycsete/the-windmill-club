@@ -642,7 +642,8 @@ figure {
     display: block; }
   .owl-nav .owl-prev,
   .owl-nav .owl-next {
-    float: left;
+    position: absolute;
+    z-index: 1;
     padding: 2.5rem 0;
     font-size: 3.125rem;
     background-color: rgba(255, 255, 255, 0.4);
@@ -655,9 +656,9 @@ figure {
       color: #2a2a2a;
       background-color: rgba(255, 255, 255, 0.8); }
   .owl-nav .owl-prev {
-    float: left; }
+    left: 0; }
   .owl-nav .owl-next {
-    float: right; }
+    right: 0; }
 
 .section {
   background-color: #eee;

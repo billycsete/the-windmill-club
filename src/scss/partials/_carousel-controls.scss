@@ -71,7 +71,8 @@
 
 	.owl-prev,
 	.owl-next {
-		float: left;
+		position: absolute;
+		z-index: 1;
 		padding: rem(40px) 0;
 		font-size: rem(50px);
 		background-color: rgba(255,255,255,0.4);
@@ -85,10 +86,10 @@
 	}
 
 	.owl-prev {
-		float: left;
+		left: 0;
 	}
 
 	.owl-next {
-		float: right;
+		right: 0;
 	}
 }
