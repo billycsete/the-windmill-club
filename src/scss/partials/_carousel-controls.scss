@@ -5,17 +5,19 @@
 // =================================================
 
 .owl-controls {
-	position: relative;
+	width: 100%;
+	z-index: 1000;
 }
 
 
 // Dot nav
 .owl-dots {
-	position: relative;
+	position: absolute;
+	width: 100%;
 	z-index: 1;
-	padding-top: rem(20px);
+	bottom: rem(-50px);
 	@include media($small) {
-		padding-top: rem(40px);
+		bottom: rem(-60px);
 	}
 
 	.owl-dot {
@@ -56,7 +58,37 @@
 
 // Paddle Nav
 .owl-nav {
-	.touch & {
-		display: none;
+	position: absolute;
+	z-index: 9000;
+	top: 50%;
+	width: 100%;
+
+	display: none;
+
+	.no-touch & {
+		display: block;
+	}
+
+	.owl-prev,
+	.owl-next {
+		float: left;
+		padding: rem(40px) 0;
+		font-size: rem(50px);
+		background-color: rgba(255,255,255,0.4);
+		color: $dark-grey;
+		transform: translateY(-50%);
+
+		.no-touch &:hover {
+			color: $black;
+			background-color: rgba(255,255,255,0.8);
+		}
+	}
+
+	.owl-prev {
+		float: left;
+	}
+
+	.owl-next {
+		float: right;
 	}
 }

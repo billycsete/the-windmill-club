@@ -397,6 +397,14 @@ p {
   color: #666;
   line-height: 1.4; }
 
+a {
+  text-decoration: none; }
+
+a.link {
+  color: #666; }
+  .no-touch a.link:hover {
+    color: #bf4a22; }
+
 @font-face {
   font-family: 'icons';
   src: url("../fonts/icons.eot?49767708");
@@ -449,6 +457,8 @@ button {
   letter-spacing: 2px;
   font-family: "brandon-grotesque", sans-serif;
   text-transform: uppercase; }
+  .no-touch button:hover {
+    background: #fff; }
 
 figure {
   margin: 0;
@@ -584,15 +594,17 @@ figure {
   100% {
     opacity: 0; } }
 .owl-controls {
-  position: relative; }
+  width: 100%;
+  z-index: 1000; }
 
 .owl-dots {
-  position: relative;
+  position: absolute;
+  width: 100%;
   z-index: 1;
-  padding-top: 1.25rem; }
+  bottom: -3.125rem; }
   @media screen and (min-width: 560px) {
     .owl-dots {
-      padding-top: 2.5rem; } }
+      bottom: -3.75rem; } }
   .owl-dots .owl-dot {
     display: inline-block;
     width: 4px;
@@ -620,15 +632,40 @@ figure {
           -webkit-transform: rotate(45deg) translateZ(0);
                   transform: rotate(45deg) translateZ(0); } }
 
-.touch .owl-nav {
+.owl-nav {
+  position: absolute;
+  z-index: 9000;
+  top: 50%;
+  width: 100%;
   display: none; }
+  .no-touch .owl-nav {
+    display: block; }
+  .owl-nav .owl-prev,
+  .owl-nav .owl-next {
+    float: left;
+    padding: 2.5rem 0;
+    font-size: 3.125rem;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #666;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%); }
+    .no-touch .owl-nav .owl-prev:hover, .no-touch
+    .owl-nav .owl-next:hover {
+      color: #2a2a2a;
+      background-color: rgba(255, 255, 255, 0.8); }
+  .owl-nav .owl-prev {
+    float: left; }
+  .owl-nav .owl-next {
+    float: right; }
 
 .section {
   background-color: #eee;
   background-image: -webkit-linear-gradient(#eee, #f5f5f5);
   background-image: linear-gradient(#eee, #f5f5f5);
   padding: 3.75rem 0;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 1px solid #ccc; }
   @media screen and (min-width: 760px) {
     .section {
       padding: 6.25rem 0; } }
@@ -678,7 +715,9 @@ figure {
   color: #2a2a2a;
   background-image: url(../images/header_background.jpg);
   background-size: cover;
-  background-position: 50% 50%; }
+  background-position: 50% 50%;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
   .no-touch .header {
     background-attachment: fixed; }
   .header .header-intro {
@@ -697,8 +736,11 @@ figure {
       .header .header-logo {
         width: 7.5rem; } }
   .header h1 {
-    font-size: 30px;
+    font-size: 28px;
     margin-bottom: 3.125rem; }
+    @media screen and (min-width: 560px) {
+      .header h1 {
+        font-size: 30px; } }
     @media screen and (min-width: 760px) {
       .header h1 {
         font-size: 34px; } }
@@ -720,7 +762,9 @@ figure {
   z-index: 9000;
   background: #fff;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky; }
   .nav .nav-list {
     margin: 0;
     padding: 0;
@@ -731,7 +775,6 @@ figure {
   .nav .nav-link {
     display: inline-block;
     font-family: "brandon-grotesque", sans-serif;
-    text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
     color: #2a2a2a;
@@ -762,7 +805,8 @@ figure {
         width: 60px; } }
 
 .looks-section {
-  text-align: center; }
+  text-align: center;
+  padding-bottom: 8.75rem; }
   .looks-section .fluid-image {
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
@@ -822,8 +866,53 @@ figure {
     .chart-wrapper table sup {
       font-size: .8em; }
 
+.contact-section .row {
+  max-width: 1200px;
+  margin: 0 auto; }
+  .contact-section .row::after {
+    clear: both;
+    content: "";
+    display: table; }
+@media screen and (min-width: 760px) {
+  .contact-section .column {
+    width: 50%;
+    float: left; } }
+.contact-section .column a.block {
+  display: block;
+  color: #666; }
+  .no-touch .contact-section .column a.block:hover .handle {
+    color: #bf4a22; }
+.contact-section .icon {
+  position: relative;
+  z-index: 10;
+  width: 80px;
+  padding: 18px 0;
+  margin: 0 auto 25px;
+  background: #2a2a2a; }
+  .contact-section .icon .arrow {
+    content: '';
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: -12px;
+    width: 0;
+    height: 0;
+    margin-left: -12px;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid #222; }
+
 .footer {
   background: #2a2a2a;
-  padding: 2.5rem 0;
-  color: #fff;
-  text-align: center; }
+  padding: 1.875rem 0;
+  font-family: "brandon-grotesque", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.75rem; }
+  .footer p {
+    color: #fff; }
+  .footer a.link {
+    color: #fff; }
+  .footer .credz {
+    font-size: 0.625rem; }

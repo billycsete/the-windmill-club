@@ -37,7 +37,7 @@ function initializeNav( ) {
 	$('.nav-link').on('click', scrollTo);
 	// add polyfill for sticky nav
 	if ( $('html').hasClass('no-touch') ) {
-		FixedSticky.tests.sticky = false;
+		// FixedSticky.tests.sticky = false;
 		$('.nav').fixedsticky();
 	}
 }
@@ -49,19 +49,23 @@ function initializeLooksGallery( ) {
 		loop: true,
 		margin: 10,
 		responsiveClass: true,
+		// navText: [&apos;next&#x27;,&#x27;prev&#x27;],
+		navText: ['<span class="icon-left-open-big"></span>','<span class="icon-right-open-big"></span>'],
 		responsive: {
 			0: {
-				items: 1,
-				nav: true
+				items: 1
 			},
 			480: {
-				items: 2
+				items: 2,
+				nav: true
 			},
 			780: {
-				items: 3
+				items: 3,
+				nav: true
 			},
 			1400: {
-				items: 4
+				items: 4,
+				nav: true
 			}
 		}
 	});

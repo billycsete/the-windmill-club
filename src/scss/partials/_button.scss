@@ -15,4 +15,8 @@ button {
 	letter-spacing: 2px;
 	font-family: $sans-serif;
 	text-transform: uppercase;
+
+	.no-touch &:hover {
+		background: $white;
+	}
 }
