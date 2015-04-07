@@ -47,9 +47,9 @@ module.exports = function( grunt ) {
         src: [
           'bower_components/jquery/dist/jquery.js',
           'bower_components/filament-sticky/fixedsticky.js',
-          'bower_components/instajam/dist/instajam.js',
           'bower_components/owl-carousel2/dist/owl.carousel.js',
-          'bower_components/dropkick/dropkick.js'
+          'bower_components/dropkick/dropkick.js',
+          'src/js/Spectragram.js'
         ],
         dest: 'dist/js/libs.js'
       }

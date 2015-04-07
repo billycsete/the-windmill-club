@@ -14,6 +14,8 @@ initializeLooksGallery();
 initializeAnalytics();
 // create toggle animation for size charts
 initializeSizeCharts();
+// Insert latest instagram photo
+addLatestInstagram();
 
 
 // Set up header parallax
@@ -36,11 +38,6 @@ function initializeHeaderParallax( ) {
 function initializeNav( ) {
 	// add scrollTo animation for nav links
 	$('.nav-link').on('click', scrollTo);
-	// add polyfill for sticky nav
-	if ( $('html').hasClass('no-touch') ) {
-		// FixedSticky.tests.sticky = false;
-		$('.nav').fixedsticky();
-	}
 }
 
 
@@ -118,34 +115,19 @@ function initializeAnalytics( ) {
 }
 
 
-// function postLatestTweet( ) {
-// 	$.getJSON("https://api.twitter.com/1/statuses/user_timeline/thewindmillclub.json?count=1&include_rts=1&callback=?", function(data) {
-// 		// result returned
-// 		var tweet = data[0].text;
-// 		// process links and reply
-// 		tweet = tweet.replace(/(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, function(url) {
-// 			return '<a href="'+url+'">'+url+'</a>';
-// 		}).replace(/B@([_a-z0-9]+)/ig, function(reply) {
-// 			return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
-// 		});
-// 		// output the result
-// 		$("#tweet").html('&ldquo; ' + tweet + ' &rdquo;');
-// 	});
-// }
 
+function addLatestInstagram( ) {
+	// load latest instagram
+	jQuery.fn.spectragram.accessData = {
+		accessToken: '17800924.fdaeaee.d0866f89ef444956ad099a86e264fe35',
+		clientID: 'eb777df6aea147bab66da6a456eb0276'
+	};
 
-
-
-// load latest instagram
-// jQuery.fn.spectragram.accessData = {
-// 	accessToken: '17800924.fdaeaee.d0866f89ef444956ad099a86e264fe35',
-// 	clientID: 'eb777df6aea147bab66da6a456eb0276'
-// };
-
-// $('#instagram').spectragram('getUserFeed',{
-// 	query: 'thewindmillclub',
-// 	max: 1,
-// 	wrapEachWith: '<figure></figure>'
-// });
+	$('#instagram').spectragram('getUserFeed',{
+		query: 'thewindmillclub',
+		max: 1,
+		wrapEachWith: '<figure></figure>'
+	});
+}
 
 },{}]},{},[1]);
