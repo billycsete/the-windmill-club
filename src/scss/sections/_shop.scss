@@ -2,11 +2,17 @@
 //
 // Section - Shop
 //
+// 1. to match the color of the background on the shirts
+//
 // =================================================
 
 .shop-section {
+	@include linear-gradient($grey, $off-white 20%);
 
-	// Hanger
+	.hanger-wrapper {
+		background: $off-white; // 1
+	}
+
 	.hanger {
 		@include clearfix;
 		max-width: 1618px;
@@ -25,18 +31,6 @@
 		@include media($medium) {
 			width: 50%;
 			float: left;
-		}
-	}
-
-	.hanger-column-left {
-		.fluid-image {
-			margin-left: -10%;
-		}
-	}
-
-	.hanger-column-right {
-		.fluid-image {
-			margin-right: -10%;
 		}
 	}
 }

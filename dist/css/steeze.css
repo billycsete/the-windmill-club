@@ -814,25 +814,27 @@ figure {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
 
-.shop-section .hanger {
-  max-width: 1618px;
-  padding-top: 1.875rem;
-  margin: 0 auto;
-  overflow: hidden; }
-  .shop-section .hanger::after {
-    clear: both;
-    content: "";
-    display: table; }
-.shop-section .hanger-column .fluid-image {
-  max-width: 110%; }
-@media screen and (min-width: 760px) {
-  .shop-section .hanger-column {
-    width: 50%;
-    float: left; } }
-.shop-section .hanger-column-left .fluid-image {
-  margin-left: -10%; }
-.shop-section .hanger-column-right .fluid-image {
-  margin-right: -10%; }
+.shop-section {
+  background-color: #eee;
+  background-image: -webkit-linear-gradient(#eee, #f5f5f5 20%);
+  background-image: linear-gradient(#eee, #f5f5f5 20%); }
+  .shop-section .hanger-wrapper {
+    background: #f5f5f5; }
+  .shop-section .hanger {
+    max-width: 1618px;
+    padding-top: 1.875rem;
+    margin: 0 auto;
+    overflow: hidden; }
+    .shop-section .hanger::after {
+      clear: both;
+      content: "";
+      display: table; }
+  .shop-section .hanger-column .fluid-image {
+    max-width: 110%; }
+  @media screen and (min-width: 760px) {
+    .shop-section .hanger-column {
+      width: 50%;
+      float: left; } }
 
 .chart-button {
   margin-bottom: 1.875rem; }
