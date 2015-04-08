@@ -15,21 +15,32 @@
 
 	.hanger {
 		@include clearfix;
-		max-width: 1618px;
 		padding-top: rem(30px);
-		margin: 0 auto;
 		overflow: hidden;
 	}
 
 	.hanger-column {
 
 		.fluid-image {
-			max-width: 110%;
+			img {
+				max-width: 110%;
+			}
 		}
-
 
 		@include media($medium) {
 			width: 50%;
+			float: left;
+		}
+	}
+
+	.hanger-column-left {
+		.fluid-image img {
+			float: right;
+		}
+	}
+
+	.hanger-column-right {
+		.fluid-image img {
 			float: left;
 		}
 	}
