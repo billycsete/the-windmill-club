@@ -46,9 +46,13 @@ module.exports = function( grunt ) {
       libs: {
         src: [
           'bower_components/jquery/dist/jquery.js',
-          'bower_components/instajam/dist/instajam.js',
+          'bower_components/dropkick/dropkick.js',
           'bower_components/owl-carousel2/dist/owl.carousel.js',
-          'bower_components/dropkick/dropkick.js'
+          'bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
+          'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js',
+          'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
+          'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
+          'src/js/Spectragram.js'
         ],
         dest: 'dist/js/libs.js'
       }

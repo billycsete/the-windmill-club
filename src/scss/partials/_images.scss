@@ -1,0 +1,22 @@
+// =================================================
+//
+// Images
+//
+// =================================================
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+// fluid images
+.fluid-image {
+	display: block;
+	margin: 0;
+	padding: 0;
+
+	img {
+		display: block;
+		max-width: 100%;
+	}
+}

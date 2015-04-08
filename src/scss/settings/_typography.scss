@@ -1,0 +1,77 @@
+// =================================================
+//
+// Typography
+//
+// =================================================
+
+$sans-serif : 'brandon-grotesque', sans-serif;
+$serif : 'freight-text-pro', 'georgia', serif;
+
+
+// =================================================
+// Body
+// =================================================
+
+html, body {
+	font-size: 16px;
+	font-family: $serif;
+	font-weight: 400;
+	color: $black;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+
+	@include media($small) {
+		font-size: 17px;
+	}
+
+	@include media($medium) {
+		font-size: 18px;
+	}
+
+	@include media($large) {
+		font-size: 19px;
+	}
+}
+
+
+// =================================================
+// Headings
+// =================================================
+
+h1, h2, h3, h4 {
+	font-family: $sans-serif;
+	font-weight: 400;
+	margin-top: 0;
+}
+
+
+h1, h2 {
+	text-transform: uppercase;
+}
+
+
+// =================================================
+// Paragraphs
+// =================================================
+
+p {
+	color: $dark-grey;
+	line-height: 1.4;
+}
+
+
+// =================================================
+// Links
+// =================================================
+
+a {
+	text-decoration: none;
+}
+
+a.link {
+	color: $dark-grey;
+
+	.no-touch &:hover {
+		color: $red;
+	}
+}

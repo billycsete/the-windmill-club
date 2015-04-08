@@ -8,23 +8,47 @@
 	<meta name="author" content="William Csete">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+	<!-- <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+	<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+	<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+	<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#da532c">
+	<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+	<meta name="theme-color" content="#ffffff"> -->
+
+	<script src="//use.typekit.net/irx6cjr.js"></script>
+	<script>try{Typekit.load();}catch(e){}</script>
+
 	<script src="js/head.js"></script>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.13.2/TweenMax.min.js"></script>
 	<script src="js/libs.js"></script>
 	<link rel="stylesheet" href="css/steeze.css">
 </head>
-<body id="top">
+<body>
 
 	<header id="header" class="header">
-		<figure class="logo">
-			<img src="images/logo_mill.png" alt="" />
-			<figcaption>
-				<hgroup class="company">
+		<div class="header-intro">
+			<figure class="header-logo fluid-image">
+				<img src="images/logo.svg" alt="" />
+			</figure>
+			<div class="header-copy">
 				<h1>The Windmill Club</h1>
-				<h4>Ultra Vias Antiquas</h4>
-				<p>MMXIV</p>
-			</figcaption>
-		</figure>
-	</header><!--/header-->
+				<h2>Ultra Vias Antiquas</h2>
+				<p>MMXV</p>
+			</div>
+		</div>
+	</header><!--/header-section-->
 
 	<nav id="nav" class="nav">
 		<ul class="nav-list">
@@ -37,99 +61,107 @@
 	</nav><!--/nav-->
 
 	<section id="looks" class="section looks-section">
-		<div class="content">
-			<header class="heading">
-				<h1>Lookbook</h1>
-				<p>The whereabouts of happiness.</p>
-			</header>
-			<div class="owl-carousel">
-				<figure><img src="images/looks_1.jpg" alt="" /></figure>
-				<figure><img src="images/looks_2.jpg" alt="" /></figure>
-				<figure><img src="images/looks_3.jpg" alt="" /></figure>
-				<figure><img src="images/looks_4.jpg" alt="" /></figure>
-				<figure><img src="images/looks_5.jpg" alt="" /></figure>
-				<figure><img src="images/looks_6.jpg" alt="" /></figure>
-			</div>
+		<header class="section-header">
+			<h1>Lookbook</h1>
+			<p>The whereabouts of happiness.</p>
+		</header>
+		<div class="owl-carousel">
+			<figure class="fluid-image"><img src="images/looks_01.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_02.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_03.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_04.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_05.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_06.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_07.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_08.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_09.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_10.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_11.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_12.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_13.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_14.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_15.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_16.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_17.jpg" alt="" /></figure>
+			<figure class="fluid-image"><img src="images/looks_18.jpg" alt="" /></figure>
 		</div>
 	</section><!--/looks-section-->
 
-	<section id="shop" class="section shop-section">
-		<div class="content">
-			<header class="heading">
-				<h1>00 Shirt</h1>
-				<p>Made in the USA of traditional oxford cloth. <br />
-					Slim fit with a spread club collar. </br />
-					Double zero tackle twill numbers sewn on back. <br />
-					Grosgrain detail on hem.</p>
-			</header>
+	<section id="shop" class="section shop-section shop-jean no-pad-bottom">
+		<header class="section-header">
+			<h1>Jean Club</h1>
+			<p>Made in the USA of traditional oxford cloth. <br />
+				Slim fit with a spread club collar. </br />
+				Double zero tackle twill numbers sewn on back. <br />
+				Grosgrain detail on hem.</p>
+		</header>
 
-			<div id="chart-btn" class="button center">
-				<a id="chart-toggle">Size Chart<span class="arrow"></span></a>
+		<button class="button chart-button" data-chart="chart-jean">Size Chart</button>
+
+		<div id="chart-jean" class="chart">
+			<div class="chart-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th> </th>
+							<th>XS</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="first">Neck</td>
+							<td>14 <sup>1/4</sup></td>
+							<td>15</td>
+							<td>15 <sup>1/2</sup></td>
+							<td>16 <sup>1/4</sup></td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td class="first">Sleeves</td>
+							<td>32 <sup>3/4</sup></td>
+							<td>33 <sup>1/4</sup></td>
+							<td>33 <sup>3/4</sup></td>
+							<td>34</td>
+							<td>34 <sup>1/2</sup></td>
+						</tr>
+						<tr>
+							<td class="first">Shoulder</td>
+							<td>17</td>
+							<td>17 <sup>3/4</sup></td>
+							<td>18 <sup>3/4</sup></td>
+							<td>19 <sup>1/4</sup></td>
+							<td>19 <sup>3/4</sup></td>
+						</tr>
+						<tr>
+							<td class="first">Length</td>
+							<td>28 <sup>1/2</sup></td>
+							<td>29</td>
+							<td>29 <sup>1/2</sup></td>
+							<td>29 <sup>1/2</sup></td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<td class="first">Chest</td>
+							<td>36</td>
+							<td>38</td>
+							<td>40</td>
+							<td>42</td>
+							<td>44</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
+		</div>
 
-			<div id="chart">
-				<div class="chart-wrapper">
-					<table>
-						<thead>
-							<tr>
-								<th> </th>
-								<th>XS</th>
-								<th>S</th>
-								<th>M</th>
-								<th>L</th>
-								<th>XL</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="first">Neck</td>
-								<td>14 <sup>1/4</sup></td>
-								<td>15</td>
-								<td>15 <sup>1/2</sup></td>
-								<td>16 <sup>1/4</sup></td>
-								<td>17</td>
-							</tr>
-							<tr>
-								<td class="first">Sleeves</td>
-								<td>32 <sup>3/4</sup></td>
-								<td>33 <sup>1/4</sup></td>
-								<td>33 <sup>3/4</sup></td>
-								<td>34</td>
-								<td>34 <sup>1/2</sup></td>
-							</tr>
-							<tr>
-								<td class="first">Shoulder</td>
-								<td>17</td>
-								<td>17 <sup>3/4</sup></td>
-								<td>18 <sup>3/4</sup></td>
-								<td>19 <sup>1/4</sup></td>
-								<td>19 <sup>3/4</sup></td>
-							</tr>
-							<tr>
-								<td class="first">Length</td>
-								<td>28 <sup>1/2</sup></td>
-								<td>29</td>
-								<td>29 <sup>1/2</sup></td>
-								<td>29 <sup>1/2</sup></td>
-								<td>30</td>
-							</tr>
-							<tr>
-								<td class="first">Chest</td>
-								<td>36</td>
-								<td>38</td>
-								<td>40</td>
-								<td>42</td>
-								<td>44</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-
-			<ul id="threads" class="clearself">
-				<li class="column" id="blue">
-					<figure class="clearself">
-						<img src="images/blue_front.jpg" alt="" />
+		<div class="hanger-wrapper">
+			<div class="hanger">
+				<div class="hanger-column hanger-column-left">
+					<figure class="fluid-image">
+						<img src="images/shop_jean_left.jpg" alt="" />
 					</figure>
 					<div class="purchase">
 						<h2>– $215 –</h2>
@@ -150,10 +182,11 @@
 						</div>
 						<p>Free shipping on Domestic orders</p>
 					</div>
-				</li>
-				<li class="column" id="white">
-					<figure class="clearself">
-						<img src="images/white_front.jpg" alt="" />
+				</div>
+
+				<div class="hanger-column hanger-column-right">
+					<figure class="fluid-image">
+						<img src="images/shop_jean_right.jpg" alt="" />
 					</figure>
 					<div class="purchase">
 						<h2>– $175 –</h2>
@@ -175,136 +208,209 @@
 						</div>
 						<p>Free shipping on Domestic orders</p>
 					</div>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
-	</section><!--/shop-section-->
+	</section><!--/shop-jean-section-->
+
+
+	<section class="section shop-section shop-polo no-pad-bottom">
+		<header class="section-header">
+			<h1>Marco, Polo</h1>
+			<p>Made in the USA of traditional oxford cloth. <br />
+				Slim fit with a spread club collar. </br />
+				Double zero tackle twill numbers sewn on back. <br />
+				Grosgrain detail on hem.</p>
+		</header>
+
+		<button class="button chart-button" data-chart="chart-polo">Size Chart</button>
+
+		<div id="chart-polo" class="chart">
+			<div class="chart-wrapper">
+				<table>
+					<thead>
+						<tr>
+							<th> </th>
+							<th>XS</th>
+							<th>S</th>
+							<th>M</th>
+							<th>L</th>
+							<th>XL</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="first">Neck</td>
+							<td>14 <sup>1/4</sup></td>
+							<td>15</td>
+							<td>15 <sup>1/2</sup></td>
+							<td>16 <sup>1/4</sup></td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td class="first">Sleeves</td>
+							<td>32 <sup>3/4</sup></td>
+							<td>33 <sup>1/4</sup></td>
+							<td>33 <sup>3/4</sup></td>
+							<td>34</td>
+							<td>34 <sup>1/2</sup></td>
+						</tr>
+						<tr>
+							<td class="first">Shoulder</td>
+							<td>17</td>
+							<td>17 <sup>3/4</sup></td>
+							<td>18 <sup>3/4</sup></td>
+							<td>19 <sup>1/4</sup></td>
+							<td>19 <sup>3/4</sup></td>
+						</tr>
+						<tr>
+							<td class="first">Length</td>
+							<td>28 <sup>1/2</sup></td>
+							<td>29</td>
+							<td>29 <sup>1/2</sup></td>
+							<td>29 <sup>1/2</sup></td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<td class="first">Chest</td>
+							<td>36</td>
+							<td>38</td>
+							<td>40</td>
+							<td>42</td>
+							<td>44</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="hanger-wrapper">
+			<div class="hanger">
+				<div class="hanger-column hanger-column-left">
+					<figure class="fluid-image">
+						<img src="images/shop_polo_left.jpg" alt="" />
+					</figure>
+					<div class="purchase">
+						<h2>– $215 –</h2>
+						<h2>Hand-Dyed Indigo Oxford</h2>
+						<div class="buy clearself">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="ZGQ64J4CME6W6">
+							<table>
+							<tr><td><input type="hidden" name="on1" value="Size"></td></tr><tr><td>
+							<button class="buy-btn" name="submit" alt="Purchase blue oxford">PURCHASE</button>
+							<select class="size" name="os1">
+								<option value="S">S </option>
+							</select></td></tr>
+							</table>
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</div>
+						<p>Free shipping on Domestic orders</p>
+					</div>
+				</div>
+
+				<div class="hanger-column hanger-column-right">
+					<figure class="fluid-image">
+						<img src="images/shop_polo_right.jpg" alt="" />
+					</figure>
+					<div class="purchase">
+						<h2>– $175 –</h2>
+						<h2>White Oxford</h2>
+						<div class="buy clearself">
+							<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+							<input type="hidden" name="cmd" value="_s-xclick">
+							<input type="hidden" name="hosted_button_id" value="PXUTTBEQ2Q2RE">
+							<table>
+							<tr><td><input type="hidden" name="on0" value="Size"></td></tr><tr><td>
+							<button class="buy-btn" name="submit" alt="PayPal - The safer, easier way to pay online!">PURCHASE</button>
+							<select class="size" name="os0">
+								<option value="S">S </option>
+								<option value="M">M </option>
+							</select></td></tr>
+							</table>
+							<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+							</form>
+						</div>
+						<p>Free shipping on Domestic orders</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/shop-polo-section-->
+
 
 	<section id="details" class="section details-section">
 		<div class="content">
-			<header class="heading">
+			<header class="section-header">
 				<h1>Details</h1>
 				<p>Tone. Frayed edges. Grand Tour. Reservations standing. Cracked tiles. Passport ink. Operations team. Barefoot concrete. Ocelot. A year in notes. Scuffed Chesterfields. Carrara quarry. Botched reconnaissance. Hang dry. After colony. Trad toparchs. Burned Ivy. Post-apocalyptic prep.</p>
 			</header>
 
-			<ul id="details-btn" class="button center clearself">
-				<li><a id="blue" class="details-toggle active">Indigo<span class="arrow"></span></a></li>
-				<li><a id="white" class="details-toggle">White<span class="arrow"></span></a></li>
-			</ul>
+			<div class="details-grid">
+				<div class="column">
 
-			<div id="details-grid">
-				<ul id="details-blue" class="four-col clearself">
-					<li class="first">
-						<figure>
-							<img src="images/details_blue_collar.jpg" alt="" />
-							<figcaption class="caption"><span>spread club collar</span></figcaption>
-						</figure>
-					</li>
-					<li class="second">
-						<figure>
-							<img src="images/details_blue_back.jpg" alt="" />
-							<figcaption class="caption"><span>twill numbers</span></figcaption>
-						</figure>
-					</li>
-					<li class="third">
-						<figure>
-							<img src="images/details_blue_bottom.jpg" alt="" />
-							<figcaption class="caption"><span>black grosgrain detail</span></figcaption>
-						</figure>
-					</li>
-					<li class="fourth">
-						<figure>
-							<img src="images/details_blue_sleeve.jpg" alt="" />
-							<figcaption class="caption"><span>oxford cloth</span></figcaption>
-						</figure>
-					</li>
-				</ul>
-				<ul id="details-white" class="four-col clearself">
-					<li class="first">
-						<figure>
-							<img src="images/details_white_collar.jpg" alt="" />
-							<figcaption class="caption"><span>spread club collar</span></figcaption>
-						</figure>
-					</li>
-					<li class="second">
-						<figure>
-							<img src="images/details_white_back.jpg" alt="" />
-							<figcaption class="caption"><span>twill numbers</span></figcaption>
-						</figure>
-					</li>
-					<li class="third">
-						<figure>
-							<img src="images/details_white_bottom.jpg" alt="" />
-							<figcaption class="caption"><span>tan grosgrain detail</span></figcaption>
-						</figure>
-					</li>
-					<li class="fourth">
-						<figure>
-							<img src="images/details_white_sleeve.jpg" alt="" />
-							<figcaption class="caption"><span>oxford cloth</span></figcaption>
-						</figure>
-					</li>
-				</ul>
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
+				<div class="column">
+
+				</div>
 			</div>
 		</div>
 	</section><!--/details-section-->
 
 	<section id="contact" class="section contact-section">
 		<div class="content">
-			<header class="heading">
+			<header class="section-header">
 				<h1>All Inquiries</h1>
-				<ul>
-					<li><p>Kevin Burrows</p></li>
-					<li><p><a href="mailto:thewindmillclub@gmail.com">thewindmillclub@gmail.com</a></p></li>
-				</ul>
+				<p>Kevin Burrows</p>
+				<p><a class="link" href="mailto:thewindmillclub@gmail.com">thewindmillclub@gmail.com</a></p>
 			</header>
 
-			<ul class="three-col clearself">
-				<li class="column instagram">
+			<div class="row">
+				<div class="column">
 					<a class="block" href="http://instagram.com/thewindmillclub/">
 						<div class="icon"><img src="images/icon_instagram.png" width="40" height"40" /><span class="arrow"></span></div>
 						<h2>Instagram</h2>
 						<p class="handle">@thewindmillclub</p>
 						<div id="instagram"></div>
 					</a>
-				</li>
-				<li class="column twitter">
+				</div>
+				<div class="column">
 					<a class="block" href="https://twitter.com/thewindmillclub">
 						<div class="icon"><img src="images/icon_twitter.png" width="40" height"40" /><span class="arrow"></span></div>
 						<h2>Twitter</h2>
 						<p class="handle">@thewindmillclub</p>
 						<p id="tweet">Follow The Windmill club on twitter.</p>
 					</a>
-				</li>
-				<li class="column blog">
-					<a class="block" href="http://thewindmillclub.tumblr.com/">
-						<div class="icon"><img src="images/icon_blog.png" width="40" height"40" /><span class="arrow"></span></div>
-						<h2>Blog</h2>
-						<p class="handle">photos, film, nonsense</p>
-						<figure>
-							<img class="center" src="images/contact_blog.jpg" alt="" />
-						</figure>
-					</a>
-				</li>
-			</ul>
+				</div>
+			</div>
 		</div>
 	</section>
 
 	<footer class="footer">
-		<p>Copyright © 2014 The Windmill Club</p>
+		<p>Copyright © 2015 The Windmill Club</p>
+		<p class="credz">Made with &lt;3 by <a class="link" href="http://billy.codes">billy</a></p>
 	</footer>
 
 	<script src="js/main.js"></script>
-	<script type="text/javascript">
-		var _gaq = _gaq || [];
-			_gaq.push(['_setAccount', 'UA-18419850-2']);
-			_gaq.push(['_trackPageview']);
-
-		(function() {
-			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-		})();
-	</script>
 </body>
 </html>

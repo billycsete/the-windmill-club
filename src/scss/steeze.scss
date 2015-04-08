@@ -13,26 +13,41 @@
 
 
 // =================================================
-// Shared
+// Settings
 // =================================================
 
-@import 'shared/normalize';
-@import 'shared/site';
-@import 'shared/typography';
-@import 'shared/icons';
-@import 'shared/images';
-@import 'shared/owl-carousel';
+@import 'settings/normalize';
+@import 'settings/site';
+@import 'settings/typography';
 
 
 // =================================================
-// Sections
+// Partials
+// =================================================
+
+@import 'partials/icons';
+@import 'partials/button';
+@import 'partials/images';
+@import 'partials/sticky';
+
+@import 'partials/carousel';
+@import 'partials/carousel-controls';
+
+@import 'partials/section';
+@import 'partials/section-header';
+
+
+// =================================================
+// Section Specific Styles
 // =================================================
 
 // @import 'old-steeze';
 
-@import 'sections/section';
 @import 'sections/header';
 @import 'sections/navigation';
-@import 'sections/section-looks';
-// @import 'sections/section-shop';
-// @import 'sections/footer';
+@import 'sections/looks';
+@import 'sections/shop';
+@import 'sections/shop-chart';
+@import 'sections/shop-buy';
+@import 'sections/contact';
+@import 'sections/footer';

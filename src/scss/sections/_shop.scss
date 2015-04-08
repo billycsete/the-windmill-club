@@ -1,0 +1,57 @@
+// =================================================
+//
+// Section - Shop
+//
+// 1. to match the color of the background on the shirts
+//
+// =================================================
+
+.shop-section {
+	@include linear-gradient($grey, $off-white 20%);
+
+	.hanger-wrapper {
+		background: $off-white; // 1
+	}
+
+	.hanger {
+		@include clearfix;
+		padding-top: rem(30px);
+		overflow: hidden;
+	}
+
+	.hanger-column {
+		position: relative;
+		z-index: 1;
+
+		.fluid-image {
+			img {
+				max-width: 110%;
+			}
+		}
+
+		@include media($medium) {
+			width: 50%;
+			float: left;
+		}
+	}
+
+	.hanger-column-left {
+		.fluid-image img {
+			float: right;
+		}
+	}
+
+	.hanger-column-right {
+		.fluid-image img {
+			float: left;
+		}
+	}
+
+	.purchase {
+		position: absolute;
+		z-index: 100;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
