@@ -2,7 +2,7 @@
 'use strict';
 
 // dropkick the size dropdowns for custom steeze
-// $('.size').dropkick();
+$('.size').dropkick();
 // set up sticky nav with scrollTo links
 initializeNav();
 // create lookbook gallery
