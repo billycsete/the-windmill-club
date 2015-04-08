@@ -3,8 +3,6 @@
 
 // dropkick the size dropdowns for custom steeze
 // $('.size').dropkick();
-// set up parallax on header background image
-initializeHeaderParallax();
 // set up sticky nav with scrollTo links
 initializeNav();
 // create lookbook gallery
@@ -17,21 +15,24 @@ initializeSizeCharts();
 addLatestInstagram();
 
 
-// Set up header parallax
-function initializeHeaderParallax( ) {
-	var $headerElement = $('#header');
-	var currentBackgroundPosition = parseFloat($headerElement.css('backgroundPositionY'));
+// init controller
+var controller = new ScrollMagic.Controller();
 
-	$(window).scroll( function() {
-		var headerHeight = $headerElement.height();
-		var pxScrolled = $(window).scrollTop();
+// 160% is 160% of the viewport height
+var headerScene = new ScrollMagic.Scene({ triggerElement: '#header', duration: '160%' })
+	.setTween("#header", { backgroundPositionY: '100%'})
+	.addIndicators({name: "2 (duration: 100%)"})
+	.addTo(controller);
 
-		var newPosition = currentBackgroundPosition + (pxScrolled / 10);
 
-		console.log(newPosition);
-		$headerElement.css('backgroundPositionY', newPosition + '%');
-	});
-}
+var navScene = new ScrollMagic.Scene({triggerElement: "#looks"})
+	// trigger animation by adding a css class
+	.setClassToggle("#nav", "stick")
+	.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+	.addTo(controller);
+
+
+
 
 
 function initializeNav( ) {

@@ -14,8 +14,7 @@
 
 	background-image: url(../images/header_background.jpg);
 	background-size: cover;
-	background-position: 50% 50%;
-	transform: translateZ(0);
+	background-position: 50% 0%;
 
 	.no-touch & {
 		background-attachment: fixed;
