@@ -20,6 +20,8 @@
 	}
 
 	.hanger-column {
+		position: relative;
+		z-index: 1;
 
 		.fluid-image {
 			img {
@@ -43,5 +45,13 @@
 		.fluid-image img {
 			float: left;
 		}
+	}
+
+	.purchase {
+		position: absolute;
+		z-index: 100;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
 	}
 }

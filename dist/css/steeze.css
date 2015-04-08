@@ -825,16 +825,27 @@ figure {
       clear: both;
       content: "";
       display: table; }
-  .shop-section .hanger-column .fluid-image img {
-    max-width: 110%; }
-  @media screen and (min-width: 760px) {
-    .shop-section .hanger-column {
-      width: 50%;
-      float: left; } }
+  .shop-section .hanger-column {
+    position: relative;
+    z-index: 1; }
+    .shop-section .hanger-column .fluid-image img {
+      max-width: 110%; }
+    @media screen and (min-width: 760px) {
+      .shop-section .hanger-column {
+        width: 50%;
+        float: left; } }
   .shop-section .hanger-column-left .fluid-image img {
     float: right; }
   .shop-section .hanger-column-right .fluid-image img {
     float: left; }
+  .shop-section .purchase {
+    position: absolute;
+    z-index: 100;
+    bottom: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 .chart-button {
   margin-bottom: 1.875rem; }
