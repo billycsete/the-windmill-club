@@ -467,8 +467,9 @@ button {
   font-family: "brandon-grotesque", sans-serif;
   text-transform: uppercase; }
   .no-touch button:hover {
-    background: #888;
-    color: #fff; }
+    background: #bf4a22;
+    color: #fff;
+    border: 3px solid #bf4a22; }
 
 figure {
   margin: 0;
@@ -547,11 +548,9 @@ figure {
   right: 0; }
 
 .dk-select-open-up .dk-select-options {
-  margin-bottom: -1px;
   bottom: 100%; }
 
 .dk-select-open-down .dk-select-options {
-  margin-top: -1px;
   top: 100%; }
 
 .dk-select-multi .dk-select-options {

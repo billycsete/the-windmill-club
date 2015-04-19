@@ -20,7 +20,8 @@ button {
 	text-transform: uppercase;
 
 	.no-touch &:hover {
-		background: $dark-grey;
+		background: $red;
 		color: $white;
+		border: 3px solid $red;
 	}
 }
