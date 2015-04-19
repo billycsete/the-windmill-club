@@ -9,14 +9,18 @@ button {
 	background: none;
 	box-shadow: none;
 	outline: none;
-	padding: rem(10px) rem(20px) rem(8px);
-	border: 1px solid $black;
-	color: $black;
+	padding: 0 26px;
+	font-size: 18px;
+	line-height: 42px;
+	background: $white;
+	border: 3px solid $dark-grey;
+	color: $dark-grey;
 	letter-spacing: 2px;
 	font-family: $sans-serif;
 	text-transform: uppercase;
 
 	.no-touch &:hover {
-		background: $white;
+		background: $dark-grey;
+		color: $white;
 	}
 }

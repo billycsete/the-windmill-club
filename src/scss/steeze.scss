@@ -30,6 +30,8 @@
 @import 'partials/images';
 @import 'partials/sticky';
 
+@import 'partials/dropkick-defaults';
+
 @import 'partials/carousel';
 @import 'partials/carousel-controls';
 
@@ -41,13 +43,12 @@
 // Section Specific Styles
 // =================================================
 
-// @import 'old-steeze';
-
 @import 'sections/header';
 @import 'sections/navigation';
 @import 'sections/looks';
 @import 'sections/shop';
 @import 'sections/shop-chart';
 @import 'sections/shop-buy';
+@import 'sections/details';
 @import 'sections/contact';
 @import 'sections/footer';

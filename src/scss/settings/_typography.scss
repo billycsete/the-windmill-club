@@ -44,9 +44,16 @@ h1, h2, h3, h4 {
 	margin-top: 0;
 }
 
-
 h1, h2 {
 	text-transform: uppercase;
+}
+
+h1 {
+	font-size: rem(26px);
+}
+
+h2 {
+	font-size: rem(18px);
 }
 
 

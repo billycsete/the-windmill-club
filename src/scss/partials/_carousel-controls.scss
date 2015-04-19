@@ -25,7 +25,7 @@
 		width: 4px;
 		height: rem(20px);
 		margin-right: rem(8px);
-		background: #ccc;
+		background: $grey;
 		transition: background 0.2s ease-in-out;
 
 		.no-touch &:hover {
@@ -34,7 +34,7 @@
 
 		&.active,
 		.no-touch &.active:hover {
-			background: #777;
+			background: $dark-grey;
 		}
 
 		&:last-child {
@@ -75,13 +75,13 @@
 		z-index: 1;
 		padding: rem(40px) 0;
 		font-size: rem(50px);
-		background-color: rgba(255,255,255,0.4);
-		color: $dark-grey;
+		background-color: $white;
+		opacity: 0.4;
+		color: $black;
 		transform: translateY(-50%);
 
 		.no-touch &:hover {
-			color: $black;
-			background-color: rgba(255,255,255,0.8);
+			opacity: 0.8;
 		}
 	}
 

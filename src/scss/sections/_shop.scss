@@ -7,7 +7,7 @@
 // =================================================
 
 .shop-section {
-	@include linear-gradient($grey, $off-white 20%);
+	@include linear-gradient($light-grey, $off-white 20%);
 
 	.hanger-wrapper {
 		background: $off-white; // 1
@@ -53,5 +53,6 @@
 		bottom: 0;
 		left: 50%;
 		transform: translateX(-50%);
+		padding-bottom: rem(40px);
 	}
 }

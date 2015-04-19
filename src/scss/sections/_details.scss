@@ -1,0 +1,32 @@
+// =================================================
+//
+// Section - Details
+//
+// =================================================
+
+.details-section {
+	@include outer-container;
+	max-width: 100%;
+
+	.section-header {
+		max-width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		@include media($medium) {
+			max-width: 60%;
+		}
+	}
+
+	.details-row {
+		@include fill-parent();
+		@include row(table);
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0 10px;
+	}
+
+	.details-column {
+		@include span-columns(4);
+		padding: 10px;
+	}
+}

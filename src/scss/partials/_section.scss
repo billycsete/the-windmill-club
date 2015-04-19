@@ -5,7 +5,9 @@
 // =================================================
 
 .section {
-	@include linear-gradient($grey, $off-white);
+	position: relative;
+	z-index: 1;
+	@include linear-gradient($light-grey, $off-white);
 	padding: rem(60px) 0;
 	text-align: center;
 	border-bottom: 1px solid #ccc;

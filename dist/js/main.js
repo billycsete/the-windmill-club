@@ -19,9 +19,11 @@ addLatestInstagram();
 // init controller
 var controller = new ScrollMagic.Controller();
 
+var headerParallax = TweenMax.fromTo("#header", 1, {css: {backgroundPositionY: "50%"}}, {css:{backgroundPositionY: "120%"}} );
+
 // 160% is 160% of the viewport height
 var headerScene = new ScrollMagic.Scene({ triggerElement: '#header', duration: '160%' })
-	.setTween("#header", { backgroundPositionY: '100%'})
+	.setTween(headerParallax)
 	.addIndicators({name: "2 (duration: 100%)"})
 	.addTo(controller);
 
@@ -126,7 +128,7 @@ function addLatestInstagram( ) {
 
 	$('#instagram').spectragram('getUserFeed',{
 		query: 'thewindmillclub',
-		max: 1,
+		max: 3,
 		wrapEachWith: '<figure></figure>'
 	});
 }
