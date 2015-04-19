@@ -128,6 +128,6 @@ function addLatestInstagram( ) {
 	$('#instagram').spectragram('getUserFeed',{
 		query: 'thewindmillclub',
 		max: 3,
-		wrapEachWith: '<figure></figure>'
+		wrapEachWith: '<div class="column"></div>'
 	});
 }

@@ -47,6 +47,8 @@
 		}
 	}
 
+
+	// TODO: organize into proper partials
 	.purchase {
 		position: absolute;
 		z-index: 100;
@@ -54,5 +56,8 @@
 		left: 50%;
 		transform: translateX(-50%);
 		padding-bottom: rem(40px);
+	}
+	.shipping {
+		font-style: italic;
 	}
 }

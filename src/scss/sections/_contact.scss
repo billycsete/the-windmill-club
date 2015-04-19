@@ -8,50 +8,23 @@
 	background: white;
 
 	.row {
-		@include clearfix;
-		max-width: 1200px;
+		@include outer-container;
+		max-width: 920px;
 		margin: 0 auto;
 	}
 
 	.column {
-		@include media($medium) {
-			width: 50%;
-			float: left;
-		}
+		@include span-columns(4);
 
-		a.block {
+		a {
 			display: block;
-			color: $dark-grey;
+			margin: 0;
+			padding: 0;
 
-			.no-touch &:hover {
-				.handle {
-					color: $red;
-				}
+			img {
+				display: block;
+				max-width: 100%;
 			}
 		}
 	}
-
-	.icon {
-		position: relative;
-		z-index: 10;
-		width: 80px;
-		padding: 18px 0;
-		margin: 0 auto 25px;
-		background: $black;
-
-		.arrow {
-			content: '';
-			position: absolute;
-			z-index: 9;
-			left: 50%;
-			bottom: -12px;
-			width: 0;
-			height: 0;
-			margin-left: -12px;
-			border-left: 12px solid transparent;
-			border-right: 12px solid transparent;
-			border-top: 12px solid #222;
-		}
-	}
-
 }
