@@ -12,8 +12,6 @@ initializeLooksGallery();
 initializeAnalytics();
 // create toggle animation for size charts
 initializeSizeCharts();
-// Insert latest instagram photo
-addLatestInstagram();
 
 
 // init controller
@@ -32,6 +30,24 @@ var navScene = new ScrollMagic.Scene({triggerElement: "#looks"})
 	// trigger animation by adding a css class
 	.setClassToggle("#nav", "stick")
 	.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+	.addTo(controller);
+
+
+
+
+// build tween
+var tweenOne = TweenMax.staggerFromTo(".western", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
+var tweenTwo = TweenMax.staggerFromTo(".polo", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
+
+// build scene
+var sceneOne = new ScrollMagic.Scene({triggerElement: "#trigger-western", duration: 460})
+	.setTween(tweenOne)
+	.addIndicators({name: "stagger westerns"})
+	.addTo(controller);
+
+var sceneTwo = new ScrollMagic.Scene({triggerElement: "#trigger-polo", duration: 460})
+	.setTween(tweenTwo)
+	.addIndicators({name: "stagger polos"})
 	.addTo(controller);
 
 
@@ -117,20 +133,5 @@ function initializeAnalytics( ) {
 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 }
 
-
-
-function addLatestInstagram( ) {
-	// load latest instagram
-	jQuery.fn.spectragram.accessData = {
-		accessToken: '17800924.fdaeaee.d0866f89ef444956ad099a86e264fe35',
-		clientID: 'eb777df6aea147bab66da6a456eb0276'
-	};
-
-	$('#instagram').spectragram('getUserFeed',{
-		query: 'thewindmillclub',
-		max: 3,
-		wrapEachWith: '<div class="column"></div>'
-	});
-}
 
 },{}]},{},[1]);

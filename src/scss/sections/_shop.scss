@@ -14,14 +14,15 @@
 	}
 
 	.hanger {
-		@include clearfix;
 		padding-top: rem(30px);
 		overflow: hidden;
 	}
 
 	.hanger-column {
+		@include clearfix;
 		position: relative;
 		z-index: 1;
+		padding-bottom: rem(140px);
 
 		.fluid-image {
 			img {
@@ -29,9 +30,25 @@
 			}
 		}
 
+		@include media(min-width 460px) {
+			padding-bottom: rem(100px);
+		}
+		@include media($small) {
+			padding-bottom: rem(80px);
+		}
+		@include media(min-width 620px) {
+			padding-bottom: rem(60px);
+		}
 		@include media($medium) {
 			width: 50%;
 			float: left;
+			padding-bottom: rem(140px);
+		}
+		@include media($large) {
+			padding-bottom: rem(80px);
+		}
+		@include media(min-width 1700px) {
+			padding-bottom: 0;
 		}
 	}
 
@@ -47,17 +64,4 @@
 		}
 	}
 
-
-	// TODO: organize into proper partials
-	.purchase {
-		position: absolute;
-		z-index: 100;
-		bottom: 0;
-		left: 50%;
-		transform: translateX(-50%);
-		padding-bottom: rem(40px);
-	}
-	.shipping {
-		font-style: italic;
-	}
 }

@@ -5,26 +5,5 @@
 // =================================================
 
 .contact-section {
-	background: white;
 
-	.row {
-		@include outer-container;
-		max-width: 920px;
-		margin: 0 auto;
-	}
-
-	.column {
-		@include span-columns(4);
-
-		a {
-			display: block;
-			margin: 0;
-			padding: 0;
-
-			img {
-				display: block;
-				max-width: 100%;
-			}
-		}
-	}
 }

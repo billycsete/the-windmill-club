@@ -4,29 +4,61 @@
 //
 // =================================================
 
+
+
 .details-section {
-	@include outer-container;
-	max-width: 100%;
 
 	.section-header {
 		max-width: 90%;
 		margin-left: auto;
 		margin-right: auto;
 		@include media($medium) {
-			max-width: 60%;
+			max-width: 900px;
 		}
 	}
 
 	.details-row {
-		@include fill-parent();
-		@include row(table);
+		position: relative;
+		z-index: 1;
+		@include outer-container;
 		margin-left: auto;
 		margin-right: auto;
 		padding: 0 10px;
 	}
 
 	.details-column {
-		@include span-columns(4);
+		width: 50%;
+		float: left;
 		padding: 10px;
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+
+		@include media($medium) {
+			width: 33.3%;
+		}
+
+		.no-touch & img {
+			filter: blur(0px);
+			transition: all 0.3s ease-in-out;
+		}
+
+		.no-touch &:hover img {
+			filter: blur(1px);
+		}
+	}
+
+	.trigger {
+		position: absolute;
+
+		&.trigger-western {
+			top: -40%;
+		}
+		&.trigger-polo {
+			top : 0%;
+			@include media($medium) {
+				top: 15%;
+			}
+		}
 	}
 }
