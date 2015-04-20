@@ -5,6 +5,8 @@
 // =================================================
 
 button {
+	position: relative;
+	z-index: 1;
 	display: inline-block;
 	background: none;
 	box-shadow: none;
@@ -22,5 +24,54 @@ button {
 	.no-touch &:hover {
 		background: $white;
 		color: $black;
+	}
+
+}
+
+
+
+// =================================================
+//
+// Arrow button for expandable size charts
+//
+// =================================================
+
+.button-arrow {
+	.icon-down-open-mini {
+		position: absolute;
+		z-index: 100;
+		bottom: -36px;
+		left: 0;
+		width: 100%;
+		font-size: rem(24px);
+		line-height: 0.8;
+		text-align: center;
+		color: $dark-grey;
+		opacity: 0;
+		transform: translateY(-15px) rotate(0deg);
+		transition: opacity 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550), transform 0.3s cubic-bezier(0.680, -0.550, 0.265, 1.550);
+	}
+
+	.no-touch &:hover {
+		.icon-down-open-mini {
+			opacity: 1;
+			transform: translateY(0px);
+		}
+	}
+
+	&.active {
+		background: $white;
+		color: $black;
+		.icon-down-open-mini {
+			opacity: 1;
+			transform: translateY(0) rotate(0deg);
+		}
+	}
+
+	.no-touch &.active:hover {
+		.icon-down-open-mini {
+			opacity: 1;
+			transform: translateY(0) rotate(180deg);
+		}
 	}
 }

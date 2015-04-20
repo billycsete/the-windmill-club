@@ -154,8 +154,8 @@ $dk-disabled-color: $red;
 
 .dk-select-open-up .dk-selected:before,
 .dk-select-open-down .dk-selected:before {
-	border-width: 0 0.25em 0.25em;
-	border-bottom-color: $dk-border-color-aux;
+	border-width: 0 0.4em 0.4em;
+	border-bottom-color: $white;
 }
 
 .dk-select-open-up .dk-selected:after,
@@ -178,8 +178,8 @@ $dk-disabled-color: $red;
 .dk-selected:hover,
 .dk-selected:focus {
 	outline: none;
-	border-color: $dk-border-color-aux;
-	background-color: $dk-border-color-aux;
+	border-color: #666;
+	background-color: #666;
 }
 
 .dk-select-disabled {
