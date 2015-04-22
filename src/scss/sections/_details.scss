@@ -90,13 +90,10 @@
 		position: absolute;
 
 		&.trigger-western {
-			top: -40%;
+			top: -60%;
 		}
 		&.trigger-polo {
-			top : 0%;
-			@include media($medium) {
-				top: 15%;
-			}
+			top : -5%;
 		}
 	}
 }

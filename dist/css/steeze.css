@@ -1211,12 +1211,9 @@ select[data-dkcacheid] {
 .details-section .trigger {
   position: absolute; }
   .details-section .trigger.trigger-western {
-    top: -40%; }
+    top: -60%; }
   .details-section .trigger.trigger-polo {
-    top: 0%; }
-    @media screen and (min-width: 760px) {
-      .details-section .trigger.trigger-polo {
-        top: 15%; } }
+    top: -5%; }
 
 .footer {
   background: #444;
