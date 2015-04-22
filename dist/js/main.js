@@ -66,7 +66,6 @@ function initializeLooksGallery( ) {
 		loop: true,
 		margin: 10,
 		responsiveClass: true,
-		// navText: [&apos;next&#x27;,&#x27;prev&#x27;],
 		navText: ['<span class="icon-left-open-big"></span>','<span class="icon-right-open-big"></span>'],
 		responsive: {
 			0: {
@@ -74,7 +73,8 @@ function initializeLooksGallery( ) {
 			},
 			480: {
 				items: 2,
-				nav: true
+				nav: true,
+				dotsEach: 1
 			},
 			780: {
 				items: 3,
@@ -82,7 +82,8 @@ function initializeLooksGallery( ) {
 			},
 			1400: {
 				items: 4,
-				nav: true
+				nav: true,
+				dotsEach: 1
 			}
 		}
 	});
