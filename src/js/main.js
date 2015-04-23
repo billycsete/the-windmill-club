@@ -2,34 +2,20 @@
 'use strict';
 
 // dropkick the size dropdowns for custom steeze
-$('.size').dropkick();
-// set up sticky nav with scrollTo links
-initializeNav();
+$('.size').dropkick( { mobile: true });
 // create lookbook gallery
 initializeLooksGallery();
 // fire up google analytics
 initializeAnalytics();
+// init scroll controller
+var controller = new ScrollMagic.Controller();
+// set up hero parallax
+initializeHeaderParallax();
+// set up sticky nav with scrollTo links
+initializeStickyNav();
 // create toggle animation for size charts
 initializeSizeCharts();
 
-
-// init controller
-var controller = new ScrollMagic.Controller();
-
-var headerParallax = TweenMax.fromTo("#header", 1, {css: {backgroundPositionY: "50%"}}, {css:{backgroundPositionY: "120%"}} );
-
-// 160% is 160% of the viewport height
-var headerScene = new ScrollMagic.Scene({ triggerElement: '#header', duration: '160%' })
-	.setTween(headerParallax)
-	.addIndicators({name: "2 (duration: 100%)"})
-	.addTo(controller);
-
-
-var navScene = new ScrollMagic.Scene({triggerElement: "#looks"})
-	// trigger animation by adding a css class
-	.setClassToggle("#nav", "stick")
-	.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
-	.addTo(controller);
 
 
 
@@ -51,11 +37,27 @@ var sceneTwo = new ScrollMagic.Scene({triggerElement: "#trigger-polo", duration:
 
 
 
+function initializeHeaderParallax( ) {
+	// Header parallax animation
+	var headerParallax = TweenMax.fromTo("#header", 1, {css: {backgroundPositionY: "50%"}}, {css:{backgroundPositionY: "120%"}} );
+	// 160% is 160% of the viewport height
+	var headerScene = new ScrollMagic.Scene({ triggerElement: '#header', duration: '160%' })
+		.setTween(headerParallax)
+		.addIndicators({name: "2 (duration: 100%)"})
+		.addTo(controller);
+}
 
 
-function initializeNav( ) {
+
+function initializeStickyNav( ) {
 	// add scrollTo animation for nav links
 	$('.nav-link').on('click', scrollTo);
+
+	var navScene = new ScrollMagic.Scene({triggerElement: "#looks"})
+		// trigger animation by adding a css class
+		.setClassToggle("#nav", "stick")
+		.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+		.addTo(controller);
 }
 
 
@@ -124,7 +126,7 @@ function scrollTo( evt ) {
 // Set up google analytics
 function initializeAnalytics( ) {
 	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-18419850-2']);
+	_gaq.push(['_setAccount', 'UA-43275048-8']);
 	_gaq.push(['_trackPageview']);
 
 	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
