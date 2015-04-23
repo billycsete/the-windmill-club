@@ -50,9 +50,8 @@ module.exports = function( grunt ) {
           'bower_components/owl-carousel2/dist/owl.carousel.js',
           'bower_components/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js',
           'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/jquery.ScrollMagic.js',
-          'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js',
-          'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js',
-          'src/js/Spectragram.js'
+          'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap.js'
+          // 'bower_components/scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators.js'
         ],
         dest: 'dist/js/libs.js'
       }

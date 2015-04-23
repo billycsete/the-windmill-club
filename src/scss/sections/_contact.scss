@@ -5,5 +5,62 @@
 // =================================================
 
 .contact-section {
+	position: relative;
+	z-index: 1;
+	background: url(../images/contact_background.jpg) no-repeat;
+	background-position: 50% 50%;
+	background-size: cover;
+	border-bottom: none;
+	height: 500px;
+	@include media($large) {
+		height: 700px;
+	}
+
+	.contact-screen {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.3);
+	}
+
+	.contact-info {
+		position: absolute;
+		width: 100%;
+		z-index: 10;
+		top: 50%;
+		transform: translateY(-50%);
+
+		h1, p {
+			color: $white;
+		}
+
+		.contact-social-links {
+			margin: 0;
+			padding: rem(50px) 0 0 0;
+
+			li {
+				display: inline-block;
+				margin: 0 rem(10px);
+			}
+
+			a {
+				color: #fff;
+				font-size: rem(30px);
+				padding: rem(10px);
+				background: rgba(0,0,0,0.5);
+
+				.no-touch &:hover {
+					color: $red;
+				}
+			}
+		}
+
+		a.text-link {
+			color: #fff;
+		}
+	}
 
 }

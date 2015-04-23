@@ -12,6 +12,8 @@ initializeAnalytics();
 var controller = new ScrollMagic.Controller();
 // set up hero parallax
 initializeHeaderParallax();
+// details grid scroll/fade into view
+initializeDetailsAnimation();
 // set up sticky nav with scrollTo links
 initializeStickyNav();
 // create toggle animation for size charts
@@ -19,37 +21,38 @@ initializeSizeCharts();
 
 
 
+// Add animate in effect on scroll for the details grid
+function initializeDetailsAnimation () {
+	// build tween
+	var tweenOne = TweenMax.staggerFromTo(".western", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
+	var tweenTwo = TweenMax.staggerFromTo(".polo", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
+
+	// build scene
+	var sceneOne = new ScrollMagic.Scene({triggerElement: "#trigger-western", duration: 460})
+		.setTween(tweenOne)
+		// .addIndicators({name: "stagger westerns"})
+		.addTo(controller);
+
+	var sceneTwo = new ScrollMagic.Scene({triggerElement: "#trigger-polo", duration: 460})
+		.setTween(tweenTwo)
+		// .addIndicators({name: "stagger polos"})
+		.addTo(controller);
+}
 
 
-// build tween
-var tweenOne = TweenMax.staggerFromTo(".western", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
-var tweenTwo = TweenMax.staggerFromTo(".polo", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
-
-// build scene
-var sceneOne = new ScrollMagic.Scene({triggerElement: "#trigger-western", duration: 460})
-	.setTween(tweenOne)
-	.addIndicators({name: "stagger westerns"})
-	.addTo(controller);
-
-var sceneTwo = new ScrollMagic.Scene({triggerElement: "#trigger-polo", duration: 460})
-	.setTween(tweenTwo)
-	.addIndicators({name: "stagger polos"})
-	.addTo(controller);
-
-
-
+// Add parallax to the header background
 function initializeHeaderParallax( ) {
 	// Header parallax animation
 	var headerParallax = TweenMax.fromTo("#header", 1, {css: {backgroundPositionY: "50%"}}, {css:{backgroundPositionY: "120%"}} );
 	// 160% is 160% of the viewport height
 	var headerScene = new ScrollMagic.Scene({ triggerElement: '#header', duration: '160%' })
 		.setTween(headerParallax)
-		.addIndicators({name: "2 (duration: 100%)"})
+		// .addIndicators({name: "2 (duration: 100%)"})
 		.addTo(controller);
 }
 
 
-
+// Set up sticky nav with scrollTo links
 function initializeStickyNav( ) {
 	// add scrollTo animation for nav links
 	$('.nav-link').on('click', scrollTo);
@@ -80,7 +83,8 @@ function initializeLooksGallery( ) {
 			},
 			780: {
 				items: 3,
-				nav: true
+				nav: true,
+				dotsEach: 1
 			},
 			1400: {
 				items: 4,
