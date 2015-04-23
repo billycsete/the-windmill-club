@@ -34,9 +34,12 @@
 
 	.header-logo {
 		margin: 0 auto rem(20px);
-		width: rem(90px);
+		width: rem(120px);
 		@include media($medium) {
-			width: rem(120px);
+			width: rem(140px);
+		}
+		@include media($large) {
+			width: rem(160px);
 		}
 	}
 

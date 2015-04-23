@@ -491,29 +491,25 @@ button {
   text-align: center;
   color: #888;
   opacity: 0;
-  -webkit-transform: translateY(-15px) rotate(0deg);
-      -ms-transform: translateY(-15px) rotate(0deg);
-          transform: translateY(-15px) rotate(0deg);
+  -webkit-transform: translate3d(0, -15px, 0) rotate(0deg);
+          transform: translate3d(0, -15px, 0) rotate(0deg);
   -webkit-transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), -webkit-transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
           transition: opacity 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55), transform 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55); }
 .no-touch .button-arrow:hover .icon-down-open-mini {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-      -ms-transform: translateY(0px);
-          transform: translateY(0px); }
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0); }
 .button-arrow.active {
   background: #fff;
   color: #444; }
   .button-arrow.active .icon-down-open-mini {
     opacity: 1;
-    -webkit-transform: translateY(0) rotate(0deg);
-        -ms-transform: translateY(0) rotate(0deg);
-            transform: translateY(0) rotate(0deg); }
+    -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
+            transform: translate3d(0, 0, 0) rotate(0deg); }
 .no-touch .button-arrow.active:hover .icon-down-open-mini {
   opacity: 1;
-  -webkit-transform: translateY(0) rotate(180deg);
-      -ms-transform: translateY(0) rotate(180deg);
-          transform: translateY(0) rotate(180deg); }
+  -webkit-transform: translate3d(0, 0, 0) rotate(180deg);
+          transform: translate3d(0, 0, 0) rotate(180deg); }
 
 figure {
   margin: 0;
@@ -944,10 +940,13 @@ select[data-dkcacheid] {
     margin-top: -80px; }
   .header .header-logo {
     margin: 0 auto 1.25rem;
-    width: 5.625rem; }
+    width: 7.5rem; }
     @media screen and (min-width: 760px) {
       .header .header-logo {
-        width: 7.5rem; } }
+        width: 8.75rem; } }
+    @media screen and (min-width: 1200px) {
+      .header .header-logo {
+        width: 10rem; } }
   .header h1 {
     font-size: 28px;
     margin-bottom: 3.125rem; }
@@ -993,7 +992,7 @@ select[data-dkcacheid] {
     color: #444;
     font-size: 0.75rem;
     width: auto;
-    padding: 1.25rem 0.625rem; }
+    padding: 1.5625rem 0.625rem; }
     .no-touch .nav .nav-link:hover {
       color: #bf4a22; }
     @media screen and (min-width: 560px) {
@@ -1071,7 +1070,7 @@ select[data-dkcacheid] {
     float: left; }
 
 .chart-button {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 2.125rem; }
 
 .chart {
   background: #fff;
@@ -1234,7 +1233,7 @@ select[data-dkcacheid] {
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.2); }
   .contact-section .contact-info {
     position: absolute;
     width: 100%;
