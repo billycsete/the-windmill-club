@@ -4,10 +4,12 @@
 //
 // =================================================
 
-$dk-color-aux: $light-grey;
-$dk-border-color: $dark-grey;
-$dk-border-color-aux: $black;
-$dk-disabled-color: $red;
+$size-button-border: $white;
+$size-button-background: $white;
+$size-button-background-alt: $light-grey;
+$size-button-text: $dark-grey;
+$size-button-text-alt: $red;
+$size-button-disabled: $red;
 
 
 .dk-select,
@@ -28,10 +30,11 @@ $dk-disabled-color: $red;
 	white-space: nowrap;
 	overflow: hidden;
 	position: relative;
-	color: $white;
-	background-color: $dk-border-color;
-	border: 3px solid $dk-border-color;
-	padding: 0 1.5em 0 0;
+	color: $size-button-text;
+	background-color: $size-button-border;
+	border: 3px solid $size-button-border;
+	padding: 0 1.5em 0 1em;
+	text-align: left;
 	&:before {
 		content: '';
 		display: block;
@@ -42,13 +45,13 @@ $dk-disabled-color: $red;
 		top: 50%;
 		border: solid transparent;
 		border-width: 0.4em 0.4em 0;
-		border-top-color: $white;
+		border-top-color: $size-button-text;
 		margin: -0.2em 0.3em 0 0;
 	}
 }
 
 .dk-selected-disabled {
-	color: $dk-disabled-color;
+	color: $size-button-disabled;
 }
 
 .dk-select .dk-select-options {
@@ -84,7 +87,7 @@ $dk-disabled-color: $red;
 }
 
 .dk-option-selected {
-	background-color: $dk-color-aux;
+	background-color: $size-button-background-alt;
 }
 
 .dk-select-options-highlight .dk-option-selected {
@@ -93,21 +96,22 @@ $dk-disabled-color: $red;
 }
 
 .dk-option {
-	padding: 0 0.5em;
-	line-height: rem(24px);
+	padding: 0 0.5em 0 1.2em;
+	line-height: rem(28px);
+	text-align: left;
 }
 
 .dk-select-options .dk-option-highlight {
-	background-color: $dk-color-aux;
+	background-color: $size-button-background-alt;
 }
 
 .dk-select-options .dk-option-disabled {
-	color: $dk-disabled-color;
+	color: $size-button-disabled;
 	background-color: transparent;
 }
 
 .dk-optgroup {
-	border: solid $dk-border-color;
+	border: solid $size-button-border;
 	border-width: 1px 0;
 	padding: 0.25em 0;
 	margin-top: 0.25em;
@@ -145,46 +149,47 @@ $dk-disabled-color: $red;
 }
 
 .dk-select-open-up .dk-selected {
-	border-color: $dk-border-color-aux;
+	border-color: $size-button-border;
 }
 
 .dk-select-open-down .dk-selected {
-	border-color: $dk-border-color-aux;
+	border-color: $size-button-border;
 }
 
 .dk-select-open-up .dk-selected:before,
 .dk-select-open-down .dk-selected:before {
 	border-width: 0 0.4em 0.4em;
-	border-bottom-color: $white;
+	border-bottom-color: $size-button-text-alt;
 }
 
 .dk-select-open-up .dk-selected:after,
 .dk-select-open-down .dk-selected:after {
-	border-left-color: $dk-border-color-aux;
+	border-left-color: $size-button-text;
 }
 
 .dk-select-open-up .dk-select-options,
 .dk-select-open-down .dk-select-options,
 .dk-select-multi:focus .dk-select-options {
 	display: block;
-	border-color: $dk-border-color-aux;
+	border-color: $size-button-text;
 }
 
 .dk-select-multi:hover,
 .dk-select-multi:focus {
 	outline: none;
+	color: $size-button-text-alt;
 }
 
 .dk-selected:hover,
 .dk-selected:focus {
 	outline: none;
-	border-color: #666;
-	background-color: #666;
+	color: $size-button-text-alt;
+	&:before { border-top-color: $size-button-text-alt; }
 }
 
 .dk-select-disabled {
 	opacity: 0.6;
-	color: $dk-disabled-color;
+	color: $size-button-disabled;
 	cursor: not-allowed;
 	.dk-selected {
 		&:hover, &:focus {

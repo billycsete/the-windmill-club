@@ -59,7 +59,7 @@ function initializeStickyNav( ) {
 	var navScene = new ScrollMagic.Scene({triggerElement: "#looks"})
 		// trigger animation by adding a css class
 		.setClassToggle("#nav", "stick")
-		.addIndicators({name: "1 - add a class"}) // add indicators (requires plugin)
+		// .addIndicators({name: "1 - add a class"})
 		.addTo(controller);
 }
 

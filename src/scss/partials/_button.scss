@@ -3,6 +3,8 @@
 // Button
 //
 // =================================================
+$blue-grey: #55595d;
+$blue-grey-alt: #4d5256;
 
 button {
 	position: relative;
@@ -14,16 +16,17 @@ button {
 	padding: 0 26px;
 	font-size: 18px;
 	line-height: 42px;
-	background: $white;
-	border: 3px solid $dark-grey;
-	color: $dark-grey;
+	background: $blue-grey;
+	border: 3px solid $blue-grey;
+	color: $white;
 	letter-spacing: 2px;
 	font-family: $sans-serif;
 	text-transform: uppercase;
 
 	.no-touch &:hover {
-		background: $white;
-		color: $black;
+		background: $red;
+		border-color: $red;
+		color: $white;
 	}
 
 }

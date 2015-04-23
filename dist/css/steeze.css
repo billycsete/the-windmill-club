@@ -409,7 +409,7 @@ a {
 a.link {
   color: #888; }
   .no-touch a.link:hover {
-    color: #bf4a22; }
+    color: #f6685d; }
 
 @font-face {
   font-family: 'icons';
@@ -470,15 +470,16 @@ button {
   padding: 0 26px;
   font-size: 18px;
   line-height: 42px;
-  background: #fff;
-  border: 3px solid #888;
-  color: #888;
+  background: #55595d;
+  border: 3px solid #55595d;
+  color: #fff;
   letter-spacing: 2px;
   font-family: "brandon-grotesque", sans-serif;
   text-transform: uppercase; }
   .no-touch button:hover {
-    background: #fff;
-    color: #444; }
+    background: #f6685d;
+    border-color: #f6685d;
+    color: #fff; }
 
 .button-arrow .icon-down-open-mini {
   position: absolute;
@@ -562,10 +563,11 @@ figure {
   white-space: nowrap;
   overflow: hidden;
   position: relative;
-  color: #fff;
-  background-color: #888;
-  border: 3px solid #888;
-  padding: 0 1.5em 0 0; }
+  color: #888;
+  background-color: #fff;
+  border: 3px solid #fff;
+  padding: 0 1.5em 0 1em;
+  text-align: left; }
   .dk-selected:before {
     content: '';
     display: block;
@@ -575,11 +577,11 @@ figure {
     top: 50%;
     border: solid transparent;
     border-width: 0.4em 0.4em 0;
-    border-top-color: #fff;
+    border-top-color: #888;
     margin: -0.2em 0.3em 0 0; }
 
 .dk-selected-disabled {
-  color: #bf4a22; }
+  color: #f6685d; }
 
 .dk-select .dk-select-options {
   position: absolute;
@@ -616,18 +618,19 @@ figure {
   color: inherit; }
 
 .dk-option {
-  padding: 0 0.5em;
-  line-height: 1.5rem; }
+  padding: 0 0.5em 0 1.2em;
+  line-height: 1.75rem;
+  text-align: left; }
 
 .dk-select-options .dk-option-highlight {
   background-color: #eee; }
 
 .dk-select-options .dk-option-disabled {
-  color: #bf4a22;
+  color: #f6685d;
   background-color: transparent; }
 
 .dk-optgroup {
-  border: solid #888;
+  border: solid #fff;
   border-width: 1px 0;
   padding: 0.25em 0;
   margin-top: 0.25em; }
@@ -657,39 +660,42 @@ figure {
     padding-left: 1.2em; }
 
 .dk-select-open-up .dk-selected {
-  border-color: #444; }
+  border-color: #fff; }
 
 .dk-select-open-down .dk-selected {
-  border-color: #444; }
+  border-color: #fff; }
 
 .dk-select-open-up .dk-selected:before,
 .dk-select-open-down .dk-selected:before {
   border-width: 0 0.4em 0.4em;
-  border-bottom-color: #fff; }
+  border-bottom-color: #f6685d; }
 
 .dk-select-open-up .dk-selected:after,
 .dk-select-open-down .dk-selected:after {
-  border-left-color: #444; }
+  border-left-color: #888; }
 
 .dk-select-open-up .dk-select-options,
 .dk-select-open-down .dk-select-options,
 .dk-select-multi:focus .dk-select-options {
   display: block;
-  border-color: #444; }
+  border-color: #888; }
 
 .dk-select-multi:hover,
 .dk-select-multi:focus {
-  outline: none; }
+  outline: none;
+  color: #f6685d; }
 
 .dk-selected:hover,
 .dk-selected:focus {
   outline: none;
-  border-color: #666;
-  background-color: #666; }
+  color: #f6685d; }
+  .dk-selected:hover:before,
+  .dk-selected:focus:before {
+    border-top-color: #f6685d; }
 
 .dk-select-disabled {
   opacity: 0.6;
-  color: #bf4a22;
+  color: #f6685d;
   cursor: not-allowed; }
   .dk-select-disabled .dk-selected:hover, .dk-select-disabled .dk-selected:focus {
     border-color: inherit; }
@@ -994,7 +1000,7 @@ select[data-dkcacheid] {
     width: auto;
     padding: 1.5625rem 0.625rem; }
     .no-touch .nav .nav-link:hover {
-      color: #bf4a22; }
+      color: #f6685d; }
     @media screen and (min-width: 560px) {
       .nav .nav-link {
         width: 96px;
@@ -1105,8 +1111,6 @@ select[data-dkcacheid] {
 .buy table {
   width: 265px;
   margin: 0 auto; }
-.buy .buy-button-wrapper {
-  background: #888; }
 .buy .buy-button {
   float: left; }
 
@@ -1256,7 +1260,7 @@ select[data-dkcacheid] {
         padding: 0.625rem;
         background: rgba(0, 0, 0, 0.5); }
         .no-touch .contact-section .contact-info .contact-social-links a:hover {
-          color: #bf4a22; }
+          color: #f6685d; }
     .contact-section .contact-info a.text-link {
       color: #fff; }
 
@@ -1272,4 +1276,4 @@ select[data-dkcacheid] {
     .footer .credz a.link {
       color: #444; }
       .no-touch .footer .credz a.link:hover {
-        color: #bf4a22; }
+        color: #f6685d; }
