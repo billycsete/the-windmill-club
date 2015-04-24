@@ -668,6 +668,10 @@ figure {
 .dk-select-open-up .dk-selected:before,
 .dk-select-open-down .dk-selected:before {
   border-width: 0 0.4em 0.4em;
+  border-bottom-color: #888; }
+
+.no-touch .dk-select-open-up .dk-selected:before,
+.no-touch .dk-select-open-down .dk-selected:before {
   border-bottom-color: #f6685d; }
 
 .dk-select-open-up .dk-selected:after,
@@ -680,17 +684,17 @@ figure {
   display: block;
   border-color: #888; }
 
-.dk-select-multi:hover,
-.dk-select-multi:focus {
+.no-touch .dk-select-multi:hover,
+.no-touch .dk-select-multi:focus {
   outline: none;
   color: #f6685d; }
 
-.dk-selected:hover,
-.dk-selected:focus {
+.no-touch .dk-selected:hover,
+.no-touch .dk-selected:focus {
   outline: none;
   color: #f6685d; }
-  .dk-selected:hover:before,
-  .dk-selected:focus:before {
+  .no-touch .dk-selected:hover:before,
+  .no-touch .dk-selected:focus:before {
     border-top-color: #f6685d; }
 
 .dk-select-disabled {

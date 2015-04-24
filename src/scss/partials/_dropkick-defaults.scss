@@ -159,6 +159,11 @@ $size-button-disabled: $red;
 .dk-select-open-up .dk-selected:before,
 .dk-select-open-down .dk-selected:before {
 	border-width: 0 0.4em 0.4em;
+	border-bottom-color: $size-button-text;
+}
+
+.no-touch .dk-select-open-up .dk-selected:before,
+.no-touch .dk-select-open-down .dk-selected:before {
 	border-bottom-color: $size-button-text-alt;
 }
 
@@ -174,14 +179,14 @@ $size-button-disabled: $red;
 	border-color: $size-button-text;
 }
 
-.dk-select-multi:hover,
-.dk-select-multi:focus {
+.no-touch .dk-select-multi:hover,
+.no-touch .dk-select-multi:focus {
 	outline: none;
 	color: $size-button-text-alt;
 }
 
-.dk-selected:hover,
-.dk-selected:focus {
+.no-touch .dk-selected:hover,
+.no-touch .dk-selected:focus {
 	outline: none;
 	color: $size-button-text-alt;
 	&:before { border-top-color: $size-button-text-alt; }
