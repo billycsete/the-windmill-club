@@ -501,8 +501,8 @@ button {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); }
 .button-arrow.active {
-  background: #fff;
-  color: #444; }
+  background: #55595d;
+  color: #fff; }
   .button-arrow.active .icon-down-open-mini {
     opacity: 1;
     -webkit-transform: translate3d(0, 0, 0) rotate(0deg);
@@ -1076,7 +1076,7 @@ select[data-dkcacheid] {
     float: left; }
 
 .chart-button {
-  margin-bottom: 2.125rem; }
+  margin-bottom: 2.5rem; }
 
 .chart {
   background: #fff;
