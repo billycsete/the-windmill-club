@@ -1047,7 +1047,7 @@ select[data-dkcacheid] {
   .shop-section .hanger-column {
     position: relative;
     z-index: 1;
-    padding-bottom: 8.75rem; }
+    padding-bottom: 11.25rem; }
     .shop-section .hanger-column::after {
       clear: both;
       content: "";
@@ -1056,7 +1056,7 @@ select[data-dkcacheid] {
       max-width: 110%; }
     @media screen and (min-width: 460px) {
       .shop-section .hanger-column {
-        padding-bottom: 6.25rem; } }
+        padding-bottom: 6.875rem; } }
     @media screen and (min-width: 560px) {
       .shop-section .hanger-column {
         padding-bottom: 5rem; } }
@@ -1124,9 +1124,6 @@ select[data-dkcacheid] {
 .buy .buy-button {
   float: left; }
 
-.purchase-price {
-  margin-bottom: 0.3125rem; }
-
 .purchase {
   position: absolute;
   width: 90%;
@@ -1149,6 +1146,11 @@ select[data-dkcacheid] {
       .purchase.left {
         left: auto;
         right: 40px; } }
+  .purchase h2 {
+    margin-bottom: 1.875rem;
+    font-size: 1.25rem; }
+    .purchase h2.purchase-price {
+      margin-bottom: 0.625rem; }
 
 .shipping {
   font-style: italic; }

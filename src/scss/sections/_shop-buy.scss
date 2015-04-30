@@ -15,10 +15,6 @@
 
 }
 
-.purchase-price {
-	margin-bottom: rem(5px);
-}
-
 
 // TODO: better class names
 .purchase {
@@ -41,6 +37,15 @@
 		&.left {
 			left: auto;
 			right: 40px;
+		}
+	}
+
+	h2 {
+		margin-bottom: rem(30px);
+		font-size: rem(20px);
+
+		&.purchase-price {
+			margin-bottom: rem(10px);
 		}
 	}
 }
