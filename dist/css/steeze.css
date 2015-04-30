@@ -1084,9 +1084,13 @@ select[data-dkcacheid] {
 
 .chart {
   background: #fff;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   text-align: left;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 1.875rem;
+  color: #888; }
+  @media screen and (min-width: 1200px) {
+    .chart {
+      font-size: 0.9375rem; } }
 
 .chart-wrapper {
   padding: 20px 0 30px;
@@ -1096,17 +1100,19 @@ select[data-dkcacheid] {
     width: 100%;
     max-width: 1000px;
     margin: 0px auto;
-    border-bottom: 1 px solid #ddd;
+    border-bottom: 1 px solid #eee;
     font-family: "brandon-grotesque", sans-serif; }
     .chart-wrapper table th {
-      padding: 10px 4px; }
+      padding: 10px 4px;
+      font-weight: normal;
+      color: #444; }
     .chart-wrapper table td {
       padding: 10px 4px;
-      border-top: 1px solid #ddd;
-      border-left: 1px solid #ddd; }
+      border-top: 1px solid #eee;
+      border-left: 1px solid #eee; }
       .chart-wrapper table td.first {
         text-align: left;
-        font-weight: bold;
+        color: #444;
         border-left: none;
         padding-left: 8px; }
     .chart-wrapper table sup {

@@ -10,9 +10,14 @@
 
 .chart {
 	background: #fff;
-	font-size: rem(12px);
+	font-size: rem(14px);
 	text-align: left;
 	margin-bottom: rem(30px);
+	color: $dark-grey;
+
+	@include media($large) {
+		font-size: rem(15px);
+	}
 }
 
 .chart-wrapper {
@@ -24,20 +29,22 @@
 	width: 100%;
 	max-width: 1000px;
 	margin: 0px auto;
-	border-bottom: 1 px solid #ddd;
+	border-bottom: 1 px solid $light-grey;
 	font-family: $sans-serif;
 
 		th {
 			padding: 10px 4px;
+			font-weight: normal;
+			color: $black;
 		}
 		td {
 			padding: 10px 4px;
-			border-top: 1px solid #ddd;
-			border-left: 1px solid #ddd;
+			border-top: 1px solid $light-grey;
+			border-left: 1px solid $light-grey;
 
 			&.first {
 				text-align: left;
-				font-weight: bold;
+				color: $black;
 				border-left: none;
 				padding-left: 8px;
 			}
