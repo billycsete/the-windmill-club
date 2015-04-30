@@ -1067,11 +1067,17 @@ select[data-dkcacheid] {
       .shop-section .hanger-column {
         width: 50%;
         float: left;
+        padding-bottom: 11.25rem; } }
+    @media screen and (min-width: 920px) {
+      .shop-section .hanger-column {
         padding-bottom: 8.75rem; } }
     @media screen and (min-width: 1200px) {
       .shop-section .hanger-column {
-        padding-bottom: 5rem; } }
-    @media screen and (min-width: 1700px) {
+        padding-bottom: 6.25rem; } }
+    @media screen and (min-width: 1500px) {
+      .shop-section .hanger-column {
+        padding-bottom: 3.75rem; } }
+    @media screen and (min-width: 1620px) {
       .shop-section .hanger-column {
         padding-bottom: 0; } }
   .shop-section .hanger-column-left .fluid-image img {
@@ -1140,7 +1146,7 @@ select[data-dkcacheid] {
       -webkit-transform: none;
           -ms-transform: none;
               transform: none;
-      padding-bottom: 2.5rem; }
+      padding-bottom: 1.875rem; }
       .purchase.right {
         left: 40px; }
       .purchase.left {

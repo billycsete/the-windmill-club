@@ -42,12 +42,18 @@
 		@include media($medium) {
 			width: 50%;
 			float: left;
+			padding-bottom: rem(180px);
+		}
+		@include media(min-width 920px) {
 			padding-bottom: rem(140px);
 		}
 		@include media($large) {
-			padding-bottom: rem(80px);
+			padding-bottom: rem(100px);
 		}
-		@include media(min-width 1700px) {
+		@include media(min-width 1500px) {
+			padding-bottom: rem(60px);
+		}
+		@include media(min-width 1620px) {
 			padding-bottom: 0;
 		}
 	}
