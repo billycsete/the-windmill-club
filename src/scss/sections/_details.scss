@@ -24,13 +24,21 @@
 		max-width: 1200px;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 0 10px;
+		padding: 0 4px;
+
+		@include media($small) {
+			padding: 0 10px;
+		}
 	}
 
 	.details-column {
 		width: 50%;
 		float: left;
-		padding: 10px;
+		padding: 4px;
+
+		@include media($small) {
+			padding: 10px;
+		}
 
 		@include media($medium) {
 			width: 33.3%;
@@ -70,20 +78,22 @@
 			}
 		}
 
-		.no-touch & img {
-			transform: translate3d(0,0,0);
-			transition: transform 0.3s ease-in-out;
-		}
-		.no-touch &:hover img {
-			transform: translate3d(0,-80px,0);
-		}
+		@include media($small) {
+			.no-touch & img {
+				transform: translate3d(0,0,0);
+				transition: transform 0.3s ease-in-out;
+			}
+			.no-touch &:hover img {
+				transform: translate3d(0,-80px,0);
+			}
 
-		.no-touch & figcaption {
-			transform: translate3d(0,80px,0);
-			transition: transform 0.3s ease-in-out;
-		}
-		.no-touch &:hover figcaption {
-			transform: translate3d(0,0px,0);
+			.no-touch & figcaption {
+				transform: translate3d(0,80px,0);
+				transition: transform 0.3s ease-in-out;
+			}
+			.no-touch &:hover figcaption {
+				transform: translate3d(0,0px,0);
+			}
 		}
 	}
 
