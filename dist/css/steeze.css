@@ -1015,16 +1015,6 @@ select[data-dkcacheid] {
     @media screen and (min-width: 1200px) {
       .nav .nav-link {
         width: 220px; } }
-  .touch .nav .nav-item-arrow {
-    display: none; }
-    @media screen and (min-width: 560px) {
-      .touch .nav .nav-item-arrow {
-        display: inline-block; } }
-  .nav .nav-item-arrow .nav-link {
-    width: 40px; }
-    @media screen and (min-width: 560px) {
-      .nav .nav-item-arrow .nav-link {
-        width: 60px; } }
 
 .looks-section {
   text-align: center;

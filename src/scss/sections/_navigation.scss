@@ -46,18 +46,18 @@
 		}
 	}
 
-	.nav-item-arrow {
-		.touch & {
-			display: none;
-			@include media($small) {
-				display: inline-block;
-			}
-		}
-		.nav-link {
-			width: 40px;
-			@include media($small) {
-				width: 60px;
-			}
-		}
-	}
+	// .nav-item-arrow {
+	// 	.touch & {
+	// 		display: none;
+	// 		@include media($small) {
+	// 			display: inline-block;
+	// 		}
+	// 	}
+	// 	.nav-link {
+	// 		width: 40px;
+	// 		@include media($small) {
+	// 			width: 60px;
+	// 		}
+	// 	}
+	// }
 }
