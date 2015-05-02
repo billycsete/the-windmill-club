@@ -1,47 +1,29 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+// google analytics
+
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-43275048-8', 'auto');
+ga('send', 'pageview');
+
+},{}],2:[function(require,module,exports){
 /*jslint node: true */
 'use strict';
+
+require('./analytics');
 
 // dropkick the size dropdowns for custom steeze
 $('.size').dropkick( { mobile: true });
 // create lookbook gallery
 initializeLooksGallery();
-// fire up google analytics
-initializeAnalytics();
-// init scroll controller
-var controller = new ScrollMagic.Controller();
-// set up hero parallax
-initializeHeaderParallax();
 // set up sticky nav with scrollTo links
 initializeStickyNav();
 // create toggle animation for size charts
 initializeSizeCharts();
 
-
-
-// Add parallax to the header background
-function initializeHeaderParallax( ) {
-	// Header parallax animation
-	var headerParallax = TweenMax.fromTo("#header", 1, {css: {backgroundPositionY: "50%"}}, {css:{backgroundPositionY: "120%"}} );
-	// 160% is 160% of the viewport height
-	var headerScene = new ScrollMagic.Scene({ triggerElement: '#header', duration: '160%' })
-		.setTween(headerParallax)
-		// .addIndicators({name: "2 (duration: 100%)"})
-		.addTo(controller);
-}
-
-
-// Set up sticky nav with scrollTo links
-function initializeStickyNav( ) {
-	// add scrollTo animation for nav links
-	$('.nav-link').on('click', scrollTo);
-
-	var navScene = new ScrollMagic.Scene({triggerElement: "#looks"})
-		// trigger animation by adding a css class
-		.setClassToggle("#nav", "stick")
-		// .addIndicators({name: "1 - add a class"})
-		.addTo(controller);
-}
 
 
 // Set up looks carousel gallery
@@ -95,6 +77,13 @@ function initializeSizeCharts( ) {
 }
 
 
+// Set up sticky nav with scrollTo links
+function initializeStickyNav( ) {
+	// add scrollTo animation for nav links
+	$('.nav-link').on('click', scrollTo);
+}
+
+
 // Scroll to sections
 function scrollTo( evt ) {
 	evt.preventDefault();
@@ -106,18 +95,4 @@ function scrollTo( evt ) {
 	}, 500);
 }
 
-
-// Set up google analytics
-function initializeAnalytics( ) {
-	var _gaq = _gaq || [];
-	_gaq.push(['_setAccount', 'UA-43275048-8']);
-	_gaq.push(['_trackPageview']);
-
-	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-
-	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-}
-
-
-},{}]},{},[1]);
+},{"./analytics":1}]},{},[2]);
