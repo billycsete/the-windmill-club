@@ -951,12 +951,9 @@ select[data-dkcacheid] {
   .header .header-logo {
     margin: 0 auto 1.25rem;
     width: 7.5rem; }
-    @media screen and (min-width: 760px) {
-      .header .header-logo {
-        width: 8.75rem; } }
     @media screen and (min-width: 1200px) {
       .header .header-logo {
-        width: 10rem; } }
+        width: 8.75rem; } }
   .header h1 {
     font-size: 28px;
     margin-bottom: 3.125rem; }

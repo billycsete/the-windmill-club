@@ -11,7 +11,6 @@
 	width: 100%;
 	text-align: center;
 	color: $black;
-
 	background-image: url(../images/header_background.jpg);
 	background-size: 100% auto;
 	background-size: cover;
@@ -35,11 +34,8 @@
 	.header-logo {
 		margin: 0 auto rem(20px);
 		width: rem(120px);
-		@include media($medium) {
-			width: rem(140px);
-		}
 		@include media($large) {
-			width: rem(160px);
+			width: rem(140px);
 		}
 	}
 
