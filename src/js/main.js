@@ -11,32 +11,11 @@ initializeAnalytics();
 var controller = new ScrollMagic.Controller();
 // set up hero parallax
 initializeHeaderParallax();
-// details grid scroll/fade into view
-initializeDetailsAnimation();
 // set up sticky nav with scrollTo links
 initializeStickyNav();
 // create toggle animation for size charts
 initializeSizeCharts();
 
-
-
-// Add animate in effect on scroll for the details grid
-function initializeDetailsAnimation () {
-	// build tween
-	var tweenOne = TweenMax.staggerFromTo(".western", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
-	var tweenTwo = TweenMax.staggerFromTo(".polo", 2, {y: 400, opacity:0}, {y: 0, opacity:1}, 0.4);
-
-	// build scene
-	var sceneOne = new ScrollMagic.Scene({triggerElement: "#trigger-western", duration: 460})
-		.setTween(tweenOne)
-		// .addIndicators({name: "stagger westerns"})
-		.addTo(controller);
-
-	var sceneTwo = new ScrollMagic.Scene({triggerElement: "#trigger-polo", duration: 460})
-		.setTween(tweenTwo)
-		// .addIndicators({name: "stagger polos"})
-		.addTo(controller);
-}
 
 
 // Add parallax to the header background
