@@ -1152,7 +1152,7 @@ select[data-dkcacheid] {
   font-style: italic; }
 
 .details-section .section-header {
-  max-width: 90%;
+  padding: 0 5%;
   margin-left: auto;
   margin-right: auto; }
   @media screen and (min-width: 760px) {
@@ -1210,23 +1210,6 @@ select[data-dkcacheid] {
         margin: 0;
         line-height: 20px;
         font-size: 14px; }
-  @media screen and (min-width: 560px) {
-    .no-touch .details-section .details-column img {
-      -webkit-transform: translate3d(0, 0, 0);
-              transform: translate3d(0, 0, 0);
-      -webkit-transition: -webkit-transform 0.3s ease-in-out;
-              transition: transform 0.3s ease-in-out; }
-    .no-touch .details-section .details-column:hover img {
-      -webkit-transform: translate3d(0, -80px, 0);
-              transform: translate3d(0, -80px, 0); }
-    .no-touch .details-section .details-column figcaption {
-      -webkit-transform: translate3d(0, 80px, 0);
-              transform: translate3d(0, 80px, 0);
-      -webkit-transition: -webkit-transform 0.3s ease-in-out;
-              transition: transform 0.3s ease-in-out; }
-    .no-touch .details-section .details-column:hover figcaption {
-      -webkit-transform: translate3d(0, 0px, 0);
-              transform: translate3d(0, 0px, 0); } }
 .details-section .trigger {
   position: absolute; }
   .details-section .trigger.trigger-western {
